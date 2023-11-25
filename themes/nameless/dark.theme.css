@@ -900,7 +900,7 @@ hr {
 }
 
 .content>.servers {
-    width: 100%;
+    width: 100% !important;
     height: 100% !important;
     max-height: unset !important;
     padding: var(--unit-50) var(--unit-50) var(--unit-50) var(--unit-50) !important
