@@ -5204,6 +5204,24 @@ hr~.filters {
     font-size: 1.25rem;
     color: white;
 }
+.end-modal .chat .input-wrapper input{
+    margin: 0;
+    background: hsl(var(--clr-neutral-900));
+}
+.end-modal .chat .input-wrapper .enter{
+    display: none;
+}
+/* esc interface */
+.esc-interface > .vm--container{
+    position: fixed !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+}
+.esc-interface .vm--overlay[data-modal="settings"] ~ div{
+    width: fit-content !important;
+}
 /* BKC */
 body #gui {
     background: hsl(var(--clr-neutral-900));
