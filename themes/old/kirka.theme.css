@@ -1,0 +1,287 @@
+#app .interface{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 0fr; 
+    grid-template-rows: 0; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "left left right"
+      "icons player play";
+      justify-content: unset !important;
+      align-items: unset !important;
+  }
+  .interface>.background>.pattern-bg {
+      background: url(https://cdn.discordapp.com/attachments/1117089952161857537/1178967760827592774/bg-pattern.png) repeat;
+      
+      background-size: cover;
+      -webkit-animation: loopPattern 40s linear infinite;
+      animation: loopPattern 40s linear infinite;
+      opacity: unset !important;
+  }
+  @-webkit-keyframes loopPattern{
+      0% {
+          background-position: 0 0 !important
+      }
+  
+      to {
+          background-position: 0 100vh
+      }
+  }
+  
+  @keyframes loopPattern{
+      0% {
+          background-position: 0 0
+      }
+  
+      to {
+          background-position: 0 100vh
+      }
+  }
+  .interface .left-interface{
+       grid-area: left;
+       position: unset !important;
+       flex-direction: row !important;
+       justify-content: space-between;
+  }
+  .interface .left-interface .money{
+       position: relative;
+      border: solid 0.313rem var(--secondary-6) !important;
+      border-top: 0.25rem solid #4d5c8b !important;
+      border-radius: 0 0 .9rem .9rem !important;
+      min-width: 6rem;
+      height: 3.5rem;
+      padding: 0 1rem 0 1.3rem !important;
+  }
+  .interface .left-interface .money svg{
+      height: 2rem;
+      width: 2rem;
+      filter: drop-shadow(0 2px 2px rgba(0,0,0,.25));
+      position: absolute;
+      left: -1rem
+  }
+  .interface .right-interface{
+      position: unset !important;
+      grid-area: right;
+  }
+  .interface #play{
+      grid-area: play;
+  }
+  .interface .team-section{
+      grid-area: player;
+      margin-right: 5.5vw;
+  }
+  .interface .left-icons{
+      position: absolute !important;
+      background: unset !important;
+      height: unset !important;
+      padding-top: 25vh;
+      grid-area: icons;
+      left: unset !important;
+      width: 100vw;
+      z-index: 0 !important;
+      
+  }
+  .left-icons .icon-btn{
+      width: 6rem !important;
+      height: 4rem !important;
+      margin-top: 3.5rem;
+      font-size: 1.125rem !important;
+      border: solid 0.313rem var(--secondary-6) !important;
+      border-top: 0.25rem solid #4d5c8b !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-radius: 0 0 0.625rem 0.625rem;
+      font-family: Exo\ 2;
+      box-shadow: 0 0.188rem 0 rgba(0,0,0,.15);
+      max-height: 4rem;
+      margin-left: 2.5rem;
+  }
+  .left-icons .wrapper{
+      margin-top: -0.7rem;
+  }
+  .left-icons .FRIENDS{
+      top: 20%;
+  }
+  .left-icons .FRIENDS,
+  .left-icons .INVENTORY{
+      position: absolute;
+      right: 2.5rem;
+      margin-top: 14rem;
+  }
+  .left-icons .icon{
+      display: none;
+  }
+  .left-icons .wrapper .text-icon{
+      --default-icon: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179117865555734648/hub.svg');
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .left-icons .wrapper .text-icon:before{
+      content: "";
+      background: var(--default-icon) 100% / 100% no-repeat;
+      width: 5rem;
+      height: 4rem;
+      margin-top: -2rem;
+      filter: drop-shadow(0 0.25rem 0.25rem rgba(0,0,0,.25)) !important;
+      margin-bottom: 0.5rem;
+  }
+  .STORE .wrapper .text-icon{
+      --default-icon: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179115904030748793/store.svg');
+  }
+  .SERVERS .wrapper .text-icon{
+      --default-icon: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179115903716167800/servers.svg');
+  }
+  .MAP .wrapper .text-icon{
+      --default-icon: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179115903430963312/map.svg');
+  }
+  .MAP .wrapper .text-icon:before{
+      background-size: 80%;
+      background-position: center;
+  }
+  .FRIENDS .wrapper .text-icon{
+       --default-icon: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179115902202028052/friends.svg');
+  }
+  .FRIENDS .wrapper .text-icon:before{
+      background-size: 80%;
+      background-position: center;
+  }
+  .left-icons>.INVENTORY{
+      --gun-rotate: rotate(-15deg);
+      width: 11rem !important;
+      font-size: 1.125rem;
+      height: 4.063rem !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+      flex-direction: unset !important;
+      padding-right: 1rem !important;
+      width: 5rem;
+  }
+  .left-icons .INVENTORY:hover>.wrapper {
+      transform: translateY(0px) !important;
+  }
+  .left-icons .INVENTORY:hover{
+      --gun-rotate: rotate(-30deg);
+  }
+  .left-icons>.INVENTORY .wrapper{
+      margin: 0;
+  }
+  .left-icons>.INVENTORY .text-icon:before{
+      all: unset;
+  }
+  .INVENTORY .wrapper .text-icon{
+       --default-icon: url('');
+  }
+  .INVENTORY:before{
+      content: "";
+      position: absolute;
+      left: -2rem;
+      top: -1.3rem;
+      transform: var(--gun-rotate);
+      transition: transform .3s ease;
+      height: 4rem !important;
+      width: 120px !important;
+      background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179131323382763581/render-mini.png') 100% / 100% no-repeat;
+  }
+  .left-icons .HUB:after,
+  .left-icons .HUB:before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 0.25rem solid var(--secondary-6);
+      box-shadow: 0 0.188rem 0 rgba(0,0,0,.15);
+      display: flex;
+      align-items: center;
+      padding: 0 1rem 0 0.6rem;
+      height: 40px;
+      border-radius: 3px;
+      margin-right: 0.5rem;
+      border-top: none!important;
+      color: var(--white);
+      cursor: pointer;
+      max-height: 2.25rem;
+      background: var(--secondary-5);
+      background-size: 1.1rem;
+      background-repeat: no-repeat;
+      background-position-y: 65%;
+      background-position-x: 0.35rem;
+      padding-left: 1.875rem;
+      border-radius: 3px;
+  }
+  .left-icons .HUB:before{
+      content: "CLANS";
+      margin-left: 0.5rem;
+      background-image: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179126952767012984/banner.png');
+  }
+  .left-icons .HUB:after{
+      content: "LEADERBOARD";
+      left: 118px;
+      background-image: url('https://cdn.discordapp.com/attachments/1117089952161857537/1179126952980918332/cup.png');
+      background-size: 1.3rem;
+      padding-left: 2rem;
+  }
+  .settings-and-socicons .soc-group:nth-child(1){
+      display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "name icon"
+      "com icon"; 
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      text-shadow: none !important;
+      padding: 0.5rem 1rem !important;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0.9rem;
+      border-right: none;
+  }
+  .settings-and-socicons .soc-group:nth-child(1) svg{
+      grid-area: icon;
+  }
+  .settings-and-socicons .soc-group:nth-child(1):before{
+      content: "DISCORD";
+       grid-area: name;
+       font-size: 1.375rem;
+      font-weight: 700;
+      text-shadow: unset !important;
+      margin-right: 0.8rem;
+      margin-left: 0.6rem;
+  }
+  .settings-and-socicons .soc-group:nth-child(1):after{
+      content: "COMMUNITY";
+       grid-area: com;
+       text-transform: lowercase;
+       margin-left: 0.6rem;
+  }
+  .settings-and-socicons .orange:nth-child(1):before{
+      content: "REDDIT"
+  }
+  .settings-and-socicons .soc-group:nth-child(2) .text-soc{
+      display: none !important;
+  }
+  .interface>.logo{
+     right: 43.5vw;
+  }
+  .right-interface #dailyQuests{
+      min-height: 405px;
+  }
+  .interface .card-cont{
+      border: solid 0.313rem var(--secondary-6) !important;
+      border-top: 0.25rem solid #4d5c8b !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-radius: 0 0 0.625rem 0.625rem !important;
+      box-shadow: 0 0.188rem 0 rgba(0,0,0,.15);
+  }
+  .profile .user-info{
+      position: relative;
+      width: 20rem !important;
+  }
+  .profile .avatar-info{
+      width: unset !important;
+       padding: 1rem .8rem .5rem .8rem;
+  }
