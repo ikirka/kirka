@@ -42,6 +42,7 @@
        position: unset !important;
        flex-direction: row !important;
        justify-content: space-between;
+       z-index: 1;
   }
   .interface .left-interface .money{
        position: relative;
@@ -67,8 +68,12 @@
       grid-area: play;
   }
   .interface .team-section{
-      grid-area: player;
-      margin-right: 5.5vw;
+     justify-content: center;
+     position: absolute !important;
+     width: 100vw;
+     height: 100vh;
+     z-index: 0 !important;
+     pointer-events: none !important;
   }
   .interface .left-icons{
       position: absolute !important;
