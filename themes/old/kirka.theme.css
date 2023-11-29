@@ -75,6 +75,9 @@
      z-index: 0 !important;
      pointer-events: none !important;
   }
+  .interface .team-section .player{
+      pointer-events: auto;
+  }
   .interface .left-icons{
       position: absolute !important;
       background: unset !important;
