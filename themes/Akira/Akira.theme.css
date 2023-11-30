@@ -4,9 +4,6 @@
     src: url(https://ikirka.github.io/kirka/fonts/Akira%20Expanded.otf) format('OpenType');
     font-display: swap
 }
-.esc-interface{
-    visibility: hidden;
-}
 .desktop-game-interface *{
     font-family: Akira !important;
 }
