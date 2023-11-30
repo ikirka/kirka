@@ -68,6 +68,7 @@
     font-size: 1rem !important;
 }
 .mini-map-cont .mod{
+    display: block !important;
     font-size: 0.5rem !important;
     opacity: .85;
 }
