@@ -293,3 +293,7 @@
       width: unset !important;
        padding: 1rem .8rem .5rem .8rem;
   }
+  #app .logo[src*="logo"]{
+      content: url("https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif");
+      height: 100px;
+  }
