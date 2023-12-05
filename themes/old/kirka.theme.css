@@ -297,3 +297,23 @@
       content: url("https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif");
       height: 100px;
   }
+  .ach-cont svg{
+      position: relative;
+      display: none;
+  }
+  .ach-cont .animate-cont{
+      /*display: flex !important;*/
+      align-items: center;
+      justify-content: center;
+  }
+    .ach-cont .animate-cont:before{
+        content: '';
+        position: absolute;
+        background: url('https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif') 100% / 100% no-repeat;
+       width: 100px;
+       height: 13rem;
+       z-index: 8;
+    }
+    .ach-cont svg use{
+        display: none !important;
+    }
