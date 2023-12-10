@@ -321,3 +321,23 @@
     background-size: cover !important;
     background-position: unset !important;
 }
+@media (min-width: 1280px){
+    .interface .left-icons{
+        width: 115vw;
+    }
+  .left-icons .FRIENDS,
+  .left-icons .INVENTORY{
+      margin-top: 18rem;
+  }
+  .left-interface .moneys{
+      position: absolute;
+      right: -12.5rem;
+  }
+  .left-icons .HUB:after{
+      left: 104px;
+  }
+}
+.game-interface .chat:focus-within .messages{
+      position: relative;
+      background: url('https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif') !important;
+}
