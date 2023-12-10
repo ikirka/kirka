@@ -1,5 +1,6 @@
 @import url('https://ikirka.github.io/kirka/themes/old/kirka.theme.css'); /* old kirka theme */
 @import url('https://ikirka.github.io/kirka/snippets/advent-calendar.css'); /* advent calendar */
+
 /* funnies */
 .avatar{
     background: url('https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif') !important;
@@ -210,3 +211,8 @@ game-interface .hp-progress[style*="40%"],
 z-index: 999;
 bottom: 0;
 }
+.interface>.background>.pattern-bg{
+       background: url(https://cdn.discordapp.com/attachments/1117089952161857537/1183525252014284850/george-washington-6473885_960_720.webp?ex=6588a6c8&is=657631c8&hm=b44f2870ca4409f602b1b2a876de721e88bbd99f9c38532b49eae4a1b27a113d&) repeat;
+      background-size: 50px;
+      transform: rotate(45deg) scale(5);
+  }
