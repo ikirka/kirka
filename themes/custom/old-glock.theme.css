@@ -66,7 +66,47 @@ div.confetti:before{
 .game-interface .hp-progress{
     position: relative;
 }
-game-interface .hp-progress[style*="40%"],
+.game-interface .hp-progress[style*="0%"],
+.game-interface .hp-progress[style*="1%"],
+.game-interface .hp-progress[style*="2%"],
+.game-interface .hp-progress[style*="3%"],
+.game-interface .hp-progress[style*="4%"],
+.game-interface .hp-progress[style*="5%"],
+.game-interface .hp-progress[style*="6%"],
+.game-interface .hp-progress[style*="7%"],
+.game-interface .hp-progress[style*="8%"],
+.game-interface .hp-progress[style*="9%"],
+.game-interface .hp-progress[style*="10%"],
+.game-interface .hp-progress[style*="11%"],
+.game-interface .hp-progress[style*="12%"],
+.game-interface .hp-progress[style*="13%"],
+.game-interface .hp-progress[style*="14%"],
+.game-interface .hp-progress[style*="15%"],
+.game-interface .hp-progress[style*="16%"],
+.game-interface .hp-progress[style*="17%"],
+.game-interface .hp-progress[style*="18%"],
+.game-interface .hp-progress[style*="19%"],
+.game-interface .hp-progress[style*="20%"],
+.game-interface .hp-progress[style*="21%"],
+.game-interface .hp-progress[style*="22%"],
+.game-interface .hp-progress[style*="23%"],
+.game-interface .hp-progress[style*="24%"],
+.game-interface .hp-progress[style*="25%"],
+.game-interface .hp-progress[style*="26%"],
+.game-interface .hp-progress[style*="27%"],
+.game-interface .hp-progress[style*="28%"],
+.game-interface .hp-progress[style*="29%"],
+.game-interface .hp-progress[style*="30%"],
+.game-interface .hp-progress[style*="31%"],
+.game-interface .hp-progress[style*="32%"],
+.game-interface .hp-progress[style*="33%"],
+.game-interface .hp-progress[style*="34%"],
+.game-interface .hp-progress[style*="35%"],
+.game-interface .hp-progress[style*="36%"],
+.game-interface .hp-progress[style*="37%"],
+.game-interface .hp-progress[style*="38%"],
+.game-interface .hp-progress[style*="39%"],
+.game-interface .hp-progress[style*="40%"],
 .game-interface .hp-progress[style*="41%"],
 .game-interface .hp-progress[style*="42%"],
 .game-interface .hp-progress[style*="43%"],
@@ -76,10 +116,50 @@ game-interface .hp-progress[style*="40%"],
 .game-interface .hp-progress[style*="47%"],
 .game-interface .hp-progress[style*="48%"],
 .game-interface .hp-progress[style*="49%"],
-.game-interface .hp-progress[style*="50%"]{
+.game-interface .hp-progress[style*="50%"] {
     background: #fc6136 !important;
 }
 
+.game-interface .hp-progress[style*="0%"]:before,
+.game-interface .hp-progress[style*="1%"]:before,
+.game-interface .hp-progress[style*="2%"]:before,
+.game-interface .hp-progress[style*="3%"]:before,
+.game-interface .hp-progress[style*="4%"]:before,
+.game-interface .hp-progress[style*="5%"]:before,
+.game-interface .hp-progress[style*="6%"]:before,
+.game-interface .hp-progress[style*="7%"]:before,
+.game-interface .hp-progress[style*="8%"]:before,
+.game-interface .hp-progress[style*="9%"]:before,
+.game-interface .hp-progress[style*="10%"]:before,
+.game-interface .hp-progress[style*="11%"]:before,
+.game-interface .hp-progress[style*="12%"]:before,
+.game-interface .hp-progress[style*="13%"]:before,
+.game-interface .hp-progress[style*="14%"]:before,
+.game-interface .hp-progress[style*="15%"]:before,
+.game-interface .hp-progress[style*="16%"]:before,
+.game-interface .hp-progress[style*="17%"]:before,
+.game-interface .hp-progress[style*="18%"]:before,
+.game-interface .hp-progress[style*="19%"]:before,
+.game-interface .hp-progress[style*="20%"]:before,
+.game-interface .hp-progress[style*="21%"]:before,
+.game-interface .hp-progress[style*="22%"]:before,
+.game-interface .hp-progress[style*="23%"]:before,
+.game-interface .hp-progress[style*="24%"]:before,
+.game-interface .hp-progress[style*="25%"]:before,
+.game-interface .hp-progress[style*="26%"]:before,
+.game-interface .hp-progress[style*="27%"]:before,
+.game-interface .hp-progress[style*="28%"]:before,
+.game-interface .hp-progress[style*="29%"]:before,
+.game-interface .hp-progress[style*="30%"]:before,
+.game-interface .hp-progress[style*="31%"]:before,
+.game-interface .hp-progress[style*="32%"]:before,
+.game-interface .hp-progress[style*="33%"]:before,
+.game-interface .hp-progress[style*="34%"]:before,
+.game-interface .hp-progress[style*="35%"]:before,
+.game-interface .hp-progress[style*="36%"]:before,
+.game-interface .hp-progress[style*="37%"]:before,
+.game-interface .hp-progress[style*="38%"]:before,
+.game-interface .hp-progress[style*="39%"]:before,
 .game-interface .hp-progress[style*="40%"]:before,
 .game-interface .hp-progress[style*="41%"]:before,
 .game-interface .hp-progress[style*="42%"]:before,
@@ -90,7 +170,7 @@ game-interface .hp-progress[style*="40%"],
 .game-interface .hp-progress[style*="47%"]:before,
 .game-interface .hp-progress[style*="48%"]:before,
 .game-interface .hp-progress[style*="49%"]:before,
-.game-interface .hp-progress[style*="50%"]:before{
+.game-interface .hp-progress[style*="50%"]:before {
     content: "omg!! You're about to die.";
     display: grid;
     place-items: center;
@@ -102,25 +182,6 @@ game-interface .hp-progress[style*="40%"],
     height: 100%;
 }
 
-.game-interface .hp-progress[style*="40%"]:after,
-.game-interface .hp-progress[style*="41%"]:after,
-.game-interface .hp-progress[style*="42%"]:after,
-.game-interface .hp-progress[style*="43%"]:after,
-.game-interface .hp-progress[style*="44%"]:after,
-.game-interface .hp-progress[style*="45%"]:after,
-.game-interface .hp-progress[style*="46%"]:after,
-.game-interface .hp-progress[style*="47%"]:after,
-.game-interface .hp-progress[style*="48%"]:after,
-.game-interface .hp-progress[style*="49%"]:after,
-.game-interface .hp-progress[style*="50%"]:after{
-    content: "";
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    background: url('https://cdn.discordapp.com/emojis/1095439076510928976.gif?size=128&quality=lossless') 100% / 100%;
-    right: 0;
-    bottom: 0;
-}
 .crosshair-cont ~ .hit{
     position: relative;
     background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183504994742308924/5bbc1e83a839b-d387fe42c0a15de7844255c20f7602f8.png?ex=658893eb&is=65761eeb&hm=f44eb9d8c2c21a41b0bc1670581afcf79eee3d035c8d9c5c6bb588e2f927e2b3&') 100% / 100% no-repeat !important;
