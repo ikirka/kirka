@@ -126,3 +126,87 @@ game-interface .hp-progress[style*="40%"],
     padding: 2rem;
     opacity: .5;
 }
+.game-interface .mini-map-cont{
+    width: 15rem;
+    left: 0 !important;
+    height: 15rem;
+    top: 0 !important;
+}
+.game-interface .mini-map-cont .name{
+    width: max-content;
+    left: 8px !important;
+    bottom: -50px !important;
+    top: unset;
+    font-size: 1.5rem;
+}
+.game-interface .mini-map-cont .name:before{
+    content: "Battle of Yorktown on";
+    margin-right: .25rem;
+}
+.game-interface .mini-map-cont:before{
+    content: "";
+    position: absolute;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183517813890109480/rb_mntvernon_siegeyorktown_final-web.png?ex=65889fdb&is=65762adb&hm=2ca79cdb5f305a3a85b6a648109a06ebaa84b1b0a69cf4091886bf8a3092be94&') 100% / 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border: 8px solid var(--secondary-1);
+    opacity: .5;
+}
+#app .end-modal{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/Surrender_of_Lord_Cornwallis.jpg') 100%/ 100% !important;
+}
+#app .end-modal .head .nickname{
+    font-size: 0;
+}
+#app .end-modal .head .clan-tag{
+    font-size: 0;
+}
+#app .end-modal .head .lvl-leader{
+    font-size: 0;
+}
+#app .end-modal .head:nth-child(1) .clan-tag:before{
+    content: "America";
+    font-size: 1rem;
+}
+#app .end-modal .head:nth-child(1) .nickname:before{
+    content: "George Washington";
+    font-size: 1.25rem;
+}
+#app .end-modal .head:nth-child(1) .lvl-leader:before{
+    content: "49";
+    font-size: 1.875rem;
+}
+#app .end-modal .head:nth-child(2) .clan-tag:before{
+    content: "Britsh";
+    font-size: 1rem;
+}
+#app .end-modal .head:nth-child(2) .nickname:before{
+    content: "Charles Cornwallis";
+    font-size: 1.25rem;
+}
+#app .end-modal .head:nth-child(2) .lvl-leader:before{
+    content: "42";
+    font-size: 1.875rem;
+}
+#app .end-modal .head:nth-child(3) .clan-tag:before{
+    content: "French";
+    font-size: 1rem;
+}
+#app .end-modal .head:nth-child(3) .nickname:before{
+    content: "Marquis de Lafayette";
+    font-size: 1.25rem;
+}
+#app .end-modal .head:nth-child(3) .lvl-leader:before{
+    content: "24";
+    font-size: 1.875rem;
+}
+.loading-scene:before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 202px;
+  background: url('https://i.imgflip.com/7ysb0k.gif');
+z-index: 999;
+bottom: 0;
+}
