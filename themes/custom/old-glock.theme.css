@@ -11,12 +11,20 @@
       position: relative;
       background: url('https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif') !important;
 }
-.confetti:before{
+div.confetti:before{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183291273206054942/tenor.gif') 100% / 100%;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183291273206054942/tenor.gif') 100% / 100% no-repeat;
+    box-shadow: 0 0 15px 15px var(--secondary-1) inset;
+}
+.quests-container .rewards{
+    position: unset !important;
+}
+.quests-container .rewards canvas.confetti{
+    height: 25%;
+    visibility: hidden;
 }
