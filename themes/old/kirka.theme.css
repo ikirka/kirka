@@ -293,7 +293,7 @@
       width: unset !important;
        padding: 1rem .8rem .5rem .8rem;
   }
-@media (min-width: 1280px){
+@media (min-width: 1280px) and (max-width: 1280px){
     .interface .left-icons{
         width: 115vw;
     }
@@ -308,4 +308,4 @@
   .left-icons .HUB:after{
       left: 104px;
   }
-}
+
