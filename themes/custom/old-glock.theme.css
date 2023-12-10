@@ -121,5 +121,8 @@ game-interface .hp-progress[style*="40%"],
     bottom: 0;
 }
 .crosshair-cont ~ .hit{
-    content: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183504994742308924/5bbc1e83a839b-d387fe42c0a15de7844255c20f7602f8.png?ex=658893eb&is=65761eeb&hm=f44eb9d8c2c21a41b0bc1670581afcf79eee3d035c8d9c5c6bb588e2f927e2b3&') 100% / 100% no-repeat !important;
+    position: relative;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183504994742308924/5bbc1e83a839b-d387fe42c0a15de7844255c20f7602f8.png?ex=658893eb&is=65761eeb&hm=f44eb9d8c2c21a41b0bc1670581afcf79eee3d035c8d9c5c6bb588e2f927e2b3&') 100% / 100% no-repeat !important;
+    padding: 2rem;
+    opacity: .5;
 }
