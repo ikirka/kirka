@@ -28,3 +28,61 @@ div.confetti:before{
     height: 25%;
     visibility: hidden;
 }
+.game-interface .hp-progress{
+    position: relative;
+}
+game-interface .hp-progress[style*="40%"],
+.game-interface .hp-progress[style*="41%"],
+.game-interface .hp-progress[style*="42%"],
+.game-interface .hp-progress[style*="43%"],
+.game-interface .hp-progress[style*="44%"],
+.game-interface .hp-progress[style*="45%"],
+.game-interface .hp-progress[style*="46%"],
+.game-interface .hp-progress[style*="47%"],
+.game-interface .hp-progress[style*="48%"],
+.game-interface .hp-progress[style*="49%"],
+.game-interface .hp-progress[style*="50%"]{
+    background: #fc6136 !important;
+}
+
+.game-interface .hp-progress[style*="40%"]:before,
+.game-interface .hp-progress[style*="41%"]:before,
+.game-interface .hp-progress[style*="42%"]:before,
+.game-interface .hp-progress[style*="43%"]:before,
+.game-interface .hp-progress[style*="44%"]:before,
+.game-interface .hp-progress[style*="45%"]:before,
+.game-interface .hp-progress[style*="46%"]:before,
+.game-interface .hp-progress[style*="47%"]:before,
+.game-interface .hp-progress[style*="48%"]:before,
+.game-interface .hp-progress[style*="49%"]:before,
+.game-interface .hp-progress[style*="50%"]:before{
+    content: "omg!! You're about to die.";
+    display: grid;
+    place-items: center;
+    position: absolute;
+    color: black;
+    right: 50px;
+    bottom: 0;
+    font-size: 1rem;
+    height: 100%;
+}
+
+.game-interface .hp-progress[style*="40%"]:after,
+.game-interface .hp-progress[style*="41%"]:after,
+.game-interface .hp-progress[style*="42%"]:after,
+.game-interface .hp-progress[style*="43%"]:after,
+.game-interface .hp-progress[style*="44%"]:after,
+.game-interface .hp-progress[style*="45%"]:after,
+.game-interface .hp-progress[style*="46%"]:after,
+.game-interface .hp-progress[style*="47%"]:after,
+.game-interface .hp-progress[style*="48%"]:after,
+.game-interface .hp-progress[style*="49%"]:after,
+.game-interface .hp-progress[style*="50%"]:after{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: url('https://cdn.discordapp.com/emojis/1095439076510928976.gif?size=128&quality=lossless') 100% / 100%;
+    right: 0;
+    bottom: 0;
+}
