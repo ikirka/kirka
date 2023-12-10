@@ -1,15 +1,52 @@
 @import url('https://ikirka.github.io/kirka/themes/old/kirka.theme.css'); /* old kirka theme */
 @import url('https://ikirka.github.io/kirka/snippets/advent-calendar.css'); /* advent calendar */
-
 /* funnies */
 .avatar{
     background: url('https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif') !important;
     background-size: cover !important;
     background-position: unset !important;
 }
+.esc-interface{
+    visibility: hidden;
+}
+.game-interface .chat:focus-within{
+    align-items: center;
+}
+.game-interface .chat .info{
+    display: none;
+}
+.game-interface .chat:focus-within:before{
+    content: "";
+      position: absolute;
+      background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183500599749259354/istockphoto-594062910-612x612_1.png?ex=65888fd3&is=65761ad3&hm=9fcd6d3903c5f676a46b91f2edf3d3ad00c3d718890e0b4a0b9a2d5ba0eca7ac&') 100% / 100% no-repeat !important;
+      background-size: cover;
+    height: 40rem;
+    width: 30rem;
+    top: -285px;
+    z-index: -1;
+    animation: fadeInOut 4s ease-in-out forwards;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .game-interface .chat:focus-within .messages{
-      position: relative;
-      background: url('https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif') !important;
+    background: transparent !important;
+    width: 24rem;
+    
+}
+.game-interface .chat:focus-within .messages *{
+    text-shadow: black 1px 0 10px;
 }
 div.confetti:before{
     content: "";
@@ -85,4 +122,7 @@ game-interface .hp-progress[style*="40%"],
     background: url('https://cdn.discordapp.com/emojis/1095439076510928976.gif?size=128&quality=lossless') 100% / 100%;
     right: 0;
     bottom: 0;
+}
+.crosshair-cont ~ .hit{
+    content: url('');
 }
