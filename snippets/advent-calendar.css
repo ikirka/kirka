@@ -1,0 +1,195 @@
+/* Advent Calendar */
+.vm--container [data-modal="christmas"] ~ div .christmas{
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+    max-width: 767px;
+}
+.vm--container [data-modal="christmas"] ~ div .heading{
+    border-radius: 0.25rem;
+    width: calc(100% - 32px - 0.5rem);
+    height: 32px;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom{
+    --box-width: 135px;
+    --box-height: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    max-height: 660px;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box{
+    position: unset !important;
+    width: var(--box-width) !important;
+    height: var(--box-height) !important;
+    border-radius: .25rem;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182116635050512586/advent-bg_03.png') 100% / 100%  no-repeat;
+    font-size: 0;
+    margin-right: 0.5rem;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-2 {
+    width: calc(var(--box-width) + 50px) !important;
+    background: url('https://media.discordapp.net/attachments/1117089952161857537/1182116971756650516/advent-bg_05.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-3 {
+    width: calc(var(--box-width) - 10px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182117700957384714/advent-bg_07.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-4 {
+    width: calc(var(--box-width) + 30px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182117897309528086/advent-bg_09.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-5 {
+    width: calc(var(--box-width) - 10px) !important;
+    height: calc(var(--box-width) + 60px) !important;
+    margin-bottom: -60px !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182118030751322123/advent-bg_11.png') 100% / 100% no-repeat;
+    margin: 0;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-5 ~ .box{
+    margin-top: 0.5rem;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-6 {
+    width: calc(var(--box-width) + 75px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182118472176648192/advent-bg_17.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-7 {
+    width: calc(var(--box-width) - 20px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182118606486638613/advent-bg_19.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-8 {
+    width: calc(var(--box-width) - 15px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119081474789417/advent-bg_21.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-9 {
+    width: calc(var(--box-width) + 30px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119164282937374/advent-bg_23.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-10 {
+    width: calc(var(--box-width) - 10px) !important;
+    height: calc(var(--box-width) - 60px) !important;
+    margin-top: 68px !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119287729705071/advent-bg_26.png') 100% / 100% no-repeat;
+    margin-right: 0;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-11 {
+    width: calc(var(--box-width) + 10px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119415827922954/advent-bg_32.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-12 {
+    width: calc(var(--box-width) + 20px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119575052111992/advent-bg_34.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-13 {
+    width: calc(var(--box-width) + 85px) !important;
+    height: calc(var(--box-width) + 30px) !important;
+    margin-bottom: -40px;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119775757942784/advent-bg_36.png') 100% / 100% no-repeat;
+    background-size: cover;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-14 {
+    width: calc(var(--box-width) - 28px) !important;
+    height: calc(var(--box-width) - 30px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119816161665136/advent-bg_38.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-15 {
+    width: calc(var(--box-width) - 28px) !important;
+    height: calc(var(--box-width) - 30px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182119947187535904/advent-bg_40.png') 100% / 100% no-repeat;
+    margin-right: 0;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-16 {
+    width: calc(var(--box-width) - 20px) !important;
+    height: calc(var(--box-width) - 30px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182120038770151494/advent-bg_47.png') 100% / 100% no-repeat;
+    background-size: cover;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-17 {
+    width: calc(var(--box-width) + 50px) !important;
+    height: calc(var(--box-width) - 30px) !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182120098945826866/advent-bg_49.png') 100% / 100% no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-18 {
+    width: calc(var(--box-width) - 30px) !important;
+    height: calc(var(--box-width) - 60px) !important;
+    margin-top: 38px !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182120139991306300/advent-bg_53.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-19 {
+    width: calc(var(--box-width) - 30px) !important;
+    height: calc(var(--box-width) - 60px) !important;
+    margin-top: 38px !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182120177639378994/advent-bg_55.png') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-20 {
+    width: calc(var(--box-width) + 90px) !important;
+    height: calc(var(--box-width));
+    margin-top: -22px !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182120240742674482/advent-bg_44.png') 100% / 100% no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-21 {
+    width: calc(var(--box-width) + 20px) !important;
+    height: calc(var(--box-width) - 30px) !important;
+    background: url('') 100% / 100% no-repeat;
+}
+
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-21 ~ .box {
+    width: calc(var(--box-width) + 10px) !important;
+    height: calc(var(--box-width) - 30px) !important;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-21{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182121067741974629/advent-bg_61.png') 100% / 100% no-repeat;
+    background-size: cover;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-22{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182121166677233725/advent-bg_63.png') 100% / 100% no-repeat;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-23{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182121175518822430/advent-bg_65.png') 100% / 100% no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-24{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182121660669755543/advent-bg_67.png') 100% / 100% no-repeat;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-25{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1182121665832943696/advent-bg_69.png') 100% / 100% no-repeat;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .bottom .box-25 {
+    line-height: 91px;
+    margin-right: 0;
+}
+vm--container [data-modal="christmas"] ~ div .christmas .subjects{
+    height: fit-content;
+    
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .subject{
+    width: calc(33% - .18rem) !important;
+    height: 100%;
+}
+.vm--container [data-modal="christmas"] ~ div .christmas .subject .quest{
+    height: 130px;
+}
