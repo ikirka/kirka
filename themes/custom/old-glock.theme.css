@@ -217,7 +217,7 @@ div.confetti:before{
 .game-interface .hp-progress[style*="width: 48%"]:before,
 .game-interface .hp-progress[style*="width: 49%"]:before,
 .game-interface .hp-progress[style*="width: 50%"]:before {
-    content: "omg!! You're about to die.";
+    content: "Echoes of doom - your demise is imminent!";
     display: grid;
     place-items: center;
     position: absolute;
@@ -226,6 +226,7 @@ div.confetti:before{
     bottom: 0;
     font-size: 1rem;
     height: 100%;
+    width: 100%;
 }
 .crosshair-cont ~ .hit{
     position: relative;
@@ -261,7 +262,7 @@ div.confetti:before{
     opacity: .5;
 }
 #app .end-modal{
-    background: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/Surrender_of_Lord_Cornwallis.jpg') 100%/ 100% !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184071764070912010/Surrender_of_Lord_Cornwallis.png?ex=658aa3c3&is=65782ec3&hm=fa9bc2f0a4c18e9e1ae0c2ea82675fae36b359ffe0cf538968a8f15249c42a96&') 100%/ 100% !important;
 }
 #app .end-modal .head .nickname{
     font-size: 0;
@@ -490,4 +491,180 @@ bottom: 0;
 .servers .message .value.bot:after{
     content: "Merchant's Ledger";
     font-size: 1rem;
+}
+.moneys .money:first-of-type:before{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 32px;
+    width: 32px;
+    margin-right: .5rem;
+}
+
+.store .top .coins:after,
+.hub-container .count:before,
+.reward.coins:first-of-type:before,
+.store #carousel .price-value:after,
+.moneys .money:first-of-type:before{
+    content: "";
+    border-radius: 50%;
+}
+.moneys .money:first-of-type svg,
+.store .top .coins+svg,
+.store #carousel .price svg,
+.hub-container .count img{
+    display: none;
+}
+.reward.coins img{
+   display: none !important;
+}
+.reward.coins:first-of-type:before{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 20px;
+    width: 20px;
+}
+.store .top .coins{
+    display: flex;
+    align-items: center;
+}
+.store .top .coins:after{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 32px;
+    width: 32px;
+    margin-left: .5rem;
+}
+.store #carousel .price-value{
+    display: flex;
+    align-items: center;
+}
+.store #carousel .price-value:after{
+     background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 52px;
+    width: 52px;
+    margin-left: .5rem;
+}
+.store .money-bottom .coins{
+    content: url('https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif');
+    width: 75% !important;
+    top: 3rem;
+}
+.hub-container .count{
+    display: flex;
+    align-items: center;
+}
+.hub-container .count:before{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 22px;
+    width: 22px;
+    margin-right: .5rem;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .head{
+    font-size: 0;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .head:before{
+    content: "Articles of Conduct";
+    font-size: 1.5rem;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item{
+    font-size: 0;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:before{
+    font-size: 1.25rem;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(1):before {
+    content: "1. Conduct in the Spirit of Civility";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(2):before {
+    content: "2. Uphold Virtuous Discourse";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(3):before {
+    content: "3. Eschew External Correspondences";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(4):before {
+    content: "4. Guard Against Superfluous Dispatches";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(5):before {
+    content: "5. Beware of Deceptive Machinations";
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close-btn{
+    width: fit-content;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close-btn .text{
+    font-size: 0;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close-btn .text:before{
+    content: "Return to duty";
+    font-size: 1.25rem;
+}
+.left-icons .HUB:before{
+    content: "Patriots' Alliances" !important;
+}
+.left-icons .HUB:after{
+    content: "Founders' Ranking" !important;
+    left: 215px !important;
+}
+.game-interface .gun-type .gun-name{
+    font-size: 0;
+}
+.game-interface .gun-type:nth-child(1) .gun-name:before{
+    content: "Patriot's Repeater";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(2) .gun-name:before{
+    content: "Liberty Scattergun";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(3) .gun-name:before{
+    content: "Colonial Harquebus";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(4) .gun-name:before{
+    content: "Freedom Twirl";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(5) .gun-name:before{
+    content: "Swift Liberty Blaze";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(6) .gun-name:before{
+    content: "Musketeer's Fury";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(7) .gun-name:before{
+    content: "Eagle's Gaze";
+    font-size: 1rem;
+}
+.game-interface .right-container .head-label{
+    font-size: 0;
+}
+.game-interface .right-container .head-label:before{
+    content: 'Switch Armament';
+    font-size: 1.5rem;
+}
+.game-interface .right-container .button .text{
+    font-size: 0;
+}
+.game-interface .right-container .button .text:before{
+    font-size: 1rem;
+}
+.game-interface .invite2:first-of-type .text:before{
+    content: "Observe";
+}
+.game-interface .invite2:first-of-type + .invite2 .text:before{
+    content: "Dispatch Summons";
+}
+.game-interface .right-container .exit-btn .text:before{
+    content: "Withdraw to Camp";
+}
+.game-interface .right-container .continue .text:before{
+    content: "Press Onward";
+}
+.game-interface .left-container .players-label{
+    font-size: 0;
+}
+.game-interface .left-container .players-label:before{
+    content: "Frontiersmen";
+    font-size: 1.5rem;
 }
