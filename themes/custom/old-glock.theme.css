@@ -221,12 +221,16 @@ div.confetti:before{
     display: grid;
     place-items: center;
     position: absolute;
-    color: black;
-    right: 50px;
-    bottom: 0;
-    font-size: 1rem;
+    color: white;
+    right: -50vw;
+    bottom: 25vw;
+    font-size: 1.5rem;
     height: 100%;
-    width: 100%;
+    min-width: 400px;
+    font-weight: bold;
+}
+.game-interface .hp-progress[style*="width: 0%"]:before{
+    content: "You have met your demise!" !important;
 }
 .crosshair-cont ~ .hit{
     position: relative;
@@ -634,6 +638,10 @@ bottom: 0;
 }
 .game-interface .gun-type:nth-child(7) .gun-name:before{
     content: "Eagle's Gaze";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(8) .gun-name:before{
+    content: "Hawk's Whisper";
     font-size: 1rem;
 }
 .game-interface .right-container .head-label{
