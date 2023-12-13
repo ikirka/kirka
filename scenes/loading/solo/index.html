@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+        #cssContainer{visibility: hidden;}
+    </style>
+    <script src="https://ikirka.github.io/kirka/scenes/scene.js"></script>
+    <div data-v-2e3e77fa="" id="app">
+      <div data-v-148d66b6="" data-v-2e3e77fa="" class="game-interface">
+        <div data-v-148d66b6="" class="crosshair-cont">
+          <img
+            data-v-148d66b6=""
+            id="crosshair-static"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAFM0aXcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMVJREFUeNpi/P//PwMQMDMBiRAg/gMQQIxQEQYWIAazAAIILgIVYGRiQAMAAQRTwQzEf0EMmIo/MBVMMMOgNDPIdEaYgSBRgABCtoUBSTUjshEhUIn/aArBRhI0gQXN2aHo/gAIIGQTmJHEUfzEgO43bJIYxv7HJYlXJxPU+YxIroeFHCNBnTj9ChBgjDjcw4zmLRaY34l2MCHAghay2EKbAYcasM2BUCci459o6n5iUQP2My6bkQ1gx+ZnrAGBBfyleoABANHYQZcgiteIAAAAAElFTkSuQmCC"
+            class="crosshair-static"
+            style="opacity: 1; display: none; visibility: hidden"
+          />
+        </div>
+        <div
+          data-v-a1612148=""
+          data-v-148d66b6=""
+          class="desktop-game-interface"
+        >
+          <div data-v-e7282a18="" data-v-a1612148="" class="mini-map-cont">
+            <div data-v-e7282a18="" class="name text-1">Fortress</div>
+            <div data-v-e7282a18="" class="mod text-1">Solo</div>
+          </div>
+          <div
+            data-v-41b31784=""
+            data-v-a1612148=""
+            class="tab-info"
+            style="display: none"
+          >
+            <div data-v-41b31784="" class="head text-2">
+              <div data-v-41b31784="" class="head-left">
+                <div data-v-41b31784="" class="players-title">Players</div>
+              </div>
+              <div data-v-41b31784="" class="server-id">
+                <div data-v-41b31784="">SERVER</div>
+              </div>
+            </div>
+            <div data-v-41b31784="" class="players">
+              <div data-v-41b31784="" class="list">
+                <div data-v-41b31784="" class="list-value">kills</div>
+                <div data-v-41b31784="" class="list-value">death</div>
+                <div data-v-41b31784="" class="list-value">score</div>
+              </div>
+              <div data-v-41b31784="" class="player-list">
+                <div data-v-41b31784="" class="player">
+                  <div data-v-41b31784="" class="player-left">
+                    <div
+                      data-v-41b31784=""
+                      class="key"
+                      style="color: rgb(255, 185, 20)"
+                    >
+                      1
+                    </div>
+                    <div data-v-41b31784="" class="nickname text-2">
+                      Bedigar
+                      <!---->
+                    </div>
+                    <div data-v-41b31784="" class="short-id">#14Y5U3</div>
+                  </div>
+                  <div data-v-41b31784="" class="player-right">
+                    <div data-v-41b31784="" class="player-value">7</div>
+                    <div data-v-41b31784="" class="player-value">2</div>
+                    <div data-v-41b31784="" class="player-value">
+                      160
+                      <svg
+                        data-v-49b1054a=""
+                        data-v-41b31784=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="star svg-icon svg-icon--star"
+                      >
+                        <!---->
+                        <use
+                          data-v-49b1054a=""
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/img/icons.06608478.svg#star"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-41b31784="" class="player">
+                  <div data-v-41b31784="" class="player-left">
+                    <div
+                      data-v-41b31784=""
+                      class="key"
+                      style="color: rgb(189, 189, 189)"
+                    >
+                      2
+                    </div>
+                    <div data-v-41b31784="" class="nickname text-2">
+                      Auroraeum
+                      <!---->
+                    </div>
+                    <div data-v-41b31784="" class="short-id">#79CUEJ</div>
+                  </div>
+                  <div data-v-41b31784="" class="player-right">
+                    <div data-v-41b31784="" class="player-value">3</div>
+                    <div data-v-41b31784="" class="player-value">4</div>
+                    <div data-v-41b31784="" class="player-value">
+                      75
+                      <svg
+                        data-v-49b1054a=""
+                        data-v-41b31784=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="star svg-icon svg-icon--star"
+                      >
+                        <!---->
+                        <use
+                          data-v-49b1054a=""
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/img/icons.06608478.svg#star"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-41b31784="" class="player">
+                  <div data-v-41b31784="" class="player-left">
+                    <div
+                      data-v-41b31784=""
+                      class="key"
+                      style="color: rgb(242, 153, 74)"
+                    >
+                      3
+                    </div>
+                    <div data-v-41b31784="" class="nickname text-2">
+                      Newbie#1
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                  <div data-v-41b31784="" class="player-right">
+                    <div data-v-41b31784="" class="player-value">2</div>
+                    <div data-v-41b31784="" class="player-value">3</div>
+                    <div data-v-41b31784="" class="player-value">
+                      40
+                      <svg
+                        data-v-49b1054a=""
+                        data-v-41b31784=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="star svg-icon svg-icon--star"
+                      >
+                        <!---->
+                        <use
+                          data-v-49b1054a=""
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/img/icons.06608478.svg#star"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-41b31784="" class="player">
+                  <div data-v-41b31784="" class="player-left">
+                    <div data-v-41b31784="" class="key">4</div>
+                    <div data-v-41b31784="" class="nickname text-2">
+                      Newbie#2
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                  <div data-v-41b31784="" class="player-right">
+                    <div data-v-41b31784="" class="player-value">1</div>
+                    <div data-v-41b31784="" class="player-value">3</div>
+                    <div data-v-41b31784="" class="player-value">
+                      30
+                      <svg
+                        data-v-49b1054a=""
+                        data-v-41b31784=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="star svg-icon svg-icon--star"
+                      >
+                        <!---->
+                        <use
+                          data-v-49b1054a=""
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/img/icons.06608478.svg#star"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-41b31784="" class="player dead">
+                  <div data-v-41b31784="" class="player-left">
+                    <div data-v-41b31784="" class="key">5</div>
+                    <div data-v-41b31784="" class="nickname text-2">
+                      Cr7sui
+                      <!---->
+                    </div>
+                    <div data-v-41b31784="" class="short-id">#35CUXD</div>
+                  </div>
+                  <div data-v-41b31784="" class="player-right">
+                    <div data-v-41b31784="" class="player-value">0</div>
+                    <div data-v-41b31784="" class="player-value">1</div>
+                    <div data-v-41b31784="" class="player-value">
+                      0
+                      <svg
+                        data-v-49b1054a=""
+                        data-v-41b31784=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="star svg-icon svg-icon--star"
+                      >
+                        <!---->
+                        <use
+                          data-v-49b1054a=""
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/img/icons.06608478.svg#star"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-41b31784="" class="player dead">
+                  <div data-v-41b31784="" class="player-left">
+                    <div data-v-41b31784="" class="key">6</div>
+                    <div data-v-41b31784="" class="nickname text-2 primary">
+                      Word
+                      <img
+                        data-v-41b31784=""
+                        src="/assets/img/verified.2106c319.svg"
+                        height="20"
+                        class="badge"
+                      />
+                    </div>
+                    <div data-v-41b31784="" class="short-id">#EHYXQ0</div>
+                  </div>
+                  <div data-v-41b31784="" class="player-right">
+                    <div data-v-41b31784="" class="player-value">0</div>
+                    <div data-v-41b31784="" class="player-value">0</div>
+                    <div data-v-41b31784="" class="player-value">
+                      0
+                      <svg
+                        data-v-49b1054a=""
+                        data-v-41b31784=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="star svg-icon svg-icon--star"
+                      >
+                        <!---->
+                        <use
+                          data-v-49b1054a=""
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/img/icons.06608478.svg#star"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-v-17681b00="" data-v-a1612148="" class="state-cont">
+            <div data-v-17681b00="" class="left">
+              <div data-v-17681b00="" class="timer bg text-1">4:35</div>
+            </div>
+            <div data-v-17681b00="" class="kill-death">
+              <div data-v-17681b00="" class="kill bg text-1">
+                0
+                <svg
+                  data-v-49b1054a=""
+                  data-v-17681b00=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon svg-icon svg-icon--skull"
+                >
+                  <!---->
+                  <use
+                    data-v-49b1054a=""
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/img/icons.06608478.svg#skull"
+                  ></use>
+                </svg>
+              </div>
+              <div data-v-17681b00="" class="death bg text-1">
+                0
+                <svg
+                  data-v-49b1054a=""
+                  data-v-17681b00=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-death svg-icon svg-icon--skull"
+                >
+                  <!---->
+                  <use
+                    data-v-49b1054a=""
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/img/icons.06608478.svg#skull"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div data-v-c2d14488="" data-v-a1612148="" class="weapons-cont">
+            <div data-v-c2d14488="" class="list-weapons">
+              <div data-v-c2d14488="" class="weapon">
+                <div data-v-c2d14488="" class="name text-1">VITA</div>
+                <div data-v-c2d14488="" class="bottom">
+                  <img
+                    data-v-c2d14488=""
+                    src="data:image/png;base64,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"
+                    alt="asset"
+                    class="weapon-img"
+                  />
+                  <div
+                    data-v-0686a978=""
+                    data-v-c2d14488=""
+                    class="info-key-cont"
+                  >
+                    1
+                  </div>
+                </div>
+              </div>
+              <div data-v-c2d14488="" class="weapon">
+                <div data-v-c2d14488="" class="name text-1">Shark</div>
+                <div data-v-c2d14488="" class="bottom">
+                  <img
+                    data-v-c2d14488=""
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABACAYAAAC9S+EXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALySURBVHgB7ZqBddowEIZ/+jpAO0HcDdIJ4kxQMkGyAXSCkgnSDaATtJ0AMgGwgTIBbKDeVUcjXGxZigHb3PfePQlLNtLpJJ1PBhRFURRFUZSTY63NSL7hAniHREhBY0qWJBmUw7AV2VfUoirI0UFoUD+QPHCKSN4jjWt0E14qMBgMZogk2qJoNHJK/BHJ0HLEkiZwbV0hgSiLEpO9L1yONuNTQe0dUvKE/cFsXlGimBGZ6qNcmuP/aTfkFZ1SI78zklu6Z4EjIkooDpLx8lxWVBKzRQIhi+LGTKRRX1G9NmVefkr3LKRRfsNevLzx8v/qkYINAtCzuR0/0QBiDNehgR0EHsKNGeJ8+Ir28387hzQWpJRbzsh6O4UbZEPymcoOWlxIUUt0d4er4jtc30eF6xNvmdkjNPX6qCRmXHLdlN0QsiiLy8GQNX0qKwz5UUk7REcZVxWqohwzsqbfVRVCikpyzjrILFQhpCiDy2DNrkJVJCSkqGdcBnOR0shCaNfjmzYkC7hpWLngdRxej/nV6+ByU2lR4qXeiSf7A/1lAeeVl67JlRbl41lXn5jB7XjBJaa2opieOaC/SEF3dSsnHy6cgGLkoWmiXJ/agTs+mqpZlTtXJ5hnpO5KUiPCoRh+ndi2abrHRDgzL7/r2AqvHVyTbKiDL3KU9QX7Ctj6dVADURb/xzFeznOSRzQNB8tE6lhLk/87tccjr9uO2hZVtXUeGYPjcQPnGgSJ2vXOAZ/DwUUhixya/jxFY5ziLRnAR/QBObBkliRPJPcSMy+rP7dx5OgD1p3J1V4Xqe7IxtHIIUXnsG7DiWFjT7xBtQbpfAyj0DPb7Jm/hdgdehiqoIpycNDuqqpCXxWVEnB8wKVh3SeTsVS+U/bSouT7hdjIA7sheVlhX6ceYxDPTVlBnxWV8m6alRWoomrek/oNZxdYR9TdBRBLT4tbHz14C9YdaE68S0bSXVSV0+czhpDag3Uv1VdQFEVRFEVRFEVRFCWNP/sSiAUw1BG0AAAAAElFTkSuQmCC"
+                    alt="asset"
+                    class="weapon-img"
+                  />
+                  <div
+                    data-v-0686a978=""
+                    data-v-c2d14488=""
+                    class="info-key-cont"
+                  >
+                    2
+                  </div>
+                </div>
+              </div>
+              <div data-v-c2d14488="" class="weapon">
+                <div data-v-c2d14488="" class="name text-1">Bayonet</div>
+                <div data-v-c2d14488="" class="bottom">
+                  <img
+                    data-v-c2d14488=""
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABACAYAAADhwaIzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJiSURBVHgB7dqBkZpAFAbgx0wKsINQQjoIHZgOvA4uHTipwOvApIJLKsBU4F0FayrwOvjzNvsIyHgKyoLC/83swB2jwv7uLuwqQkRERERERERERERERNMGYCbUmw8nji00jCfdvmnZ2fbF9v/YdpckyZvQ1ZL3DliL2Mt5RUBFSK9+nwG1k5w6qGHkusnkMkUwGy2vGsxG6F3ngkh1s9XS1XixkRDQL2GraUfDeEA8uZaFUDNaWUvE47RkWp59KODd2mlWWQ7x/Q9FIqhcx1e5V3ryqZYV4tpX9tOuQ9H3Wtt733+XaBWUI75qKJ9wZfdl5+05GRO9oM89BVJ30ZiC8sZjLWOE8E1bop8xxDvaUhqcZ168RsYOoZWsewyl4FCG8livbIy1W2pCL3puFTMUh3Bz4UMYd7fUhF78zCoix3CK7owPkB7Kb2eOYfgWmgmVLBTfn2/RP4cb6qYSuREIE4xzLQ9a+ryr+ablo5YfnCGuGbClONjgLnRowFC29rmp0CEMN9BHD+Vmxoi2rFIyLQvbPtkhvx9zjPELW9+1/NYx5UU6crdBVPlQtFJ21b91s5QQSirx7LT8lLDimAkH/eNQmfJGmP7wA7FDeLjLEY+zz86E/gWxtzKr/d8/6RdrK7FvAvznT/dpXi/+i1XE2Yc2lDcBzzic2e3Ko0wVym5p3vKlMWaQW5/DaKDscq76MUJHoYx//eMYhDHA20qHLgxleusfBYQ7JC/apJ6F0mStZbrjg4cwAEf9jZS1PHeqNYBTJP2xQPxq5KoWDBehhmRd40qIiIiIiIiIiIiIaGB/AdsAyaHPONJnAAAAAElFTkSuQmCC"
+                    alt="asset"
+                    class="weapon-img"
+                  />
+                  <div
+                    data-v-0686a978=""
+                    data-v-c2d14488=""
+                    class="info-key-cont"
+                  >
+                    3
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-v-c2d14488="" class="state-weapon-active text-1">
+              <div data-v-c2d14488="" class="ammunition">5</div>
+              <div data-v-c2d14488="" class="mWwn">∞</div>
+            </div>
+          </div>
+          <div
+            data-v-49a9c8f8=""
+            data-v-a1612148=""
+            class="kill-bar-cont"
+          ></div>
+          <div data-v-6de4478f="" data-v-a1612148="" class="chat chat-position">
+            <!---->
+            <div data-v-6de4478f="" class="info">
+              <div data-v-6de4478f="" class="instruction">
+                <div
+                  data-v-0686a978=""
+                  data-v-6de4478f=""
+                  class="info-key-cont instruction-icon"
+                >
+                  SHIFT
+                </div>
+                <div data-v-6de4478f="" class="text-2 info-text">cRouch</div>
+              </div>
+              <div data-v-6de4478f="" class="instruction">
+                <div
+                  data-v-0686a978=""
+                  data-v-6de4478f=""
+                  class="info-key-cont instruction-icon"
+                >
+                  TAB
+                </div>
+                <div data-v-6de4478f="" class="text-2 info-text">kIllbar</div>
+              </div>
+              <div data-v-6de4478f="" class="instruction">
+                <div
+                  data-v-0686a978=""
+                  data-v-6de4478f=""
+                  class="info-key-cont instruction-icon"
+                >
+                  E
+                </div>
+                <div data-v-6de4478f="" class="text-2 info-text">dAsh</div>
+              </div>
+            </div>
+            <div
+              data-v-01ee3c19=""
+              data-v-6de4478f=""
+              class="messages messages-cont"
+              style="background: rgba(47, 57, 87, 0.3)"
+            ></div>
+            <div data-v-5e3cfd63="" data-v-6de4478f="" class="input-wrapper">
+              <input
+                data-v-5e3cfd63=""
+                type="text"
+                id="WMNn"
+                placeholder="MESSAGE..."
+                autocomplete="off"
+                class="input"
+              />
+              <div
+                data-v-0686a978=""
+                data-v-5e3cfd63=""
+                class="info-key-cont enter"
+              >
+                ENTER
+              </div>
+            </div>
+          </div>
+          <div data-v-68527c1a="" data-v-a1612148="" class="state">
+            <div data-v-68527c1a="" class="cont-endurance">
+              <div
+                data-v-68527c1a=""
+                class="endurance-progress"
+                style="width: 100%"
+              ></div>
+            </div>
+            <div data-v-68527c1a="" class="hp">
+              <div data-v-68527c1a="" class="hp-title text-1">60</div>
+              <div data-v-68527c1a="" class="cont-hp">
+                <div
+                  data-v-68527c1a=""
+                  class="hp-progress"
+                  style="width: 100%; background: rgb(255, 255, 255)"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!---->
+        </div>
+        <div data-v-52b18b80="" data-v-148d66b6="" class="esc-interface">
+          <div data-v-52b18b80="" class="left-container">
+            <div data-v-52b18b80="" class="players-label text-1">PLAYERS</div>
+            <div data-v-52b18b80="" class="player-list">
+              <div data-v-52b18b80="" class="player">
+                <div data-v-52b18b80="" class="player-left">
+                  <!---->
+                  <div
+                    data-v-7dd84507=""
+                    data-v-52b18b80=""
+                    class="avatar"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-image: url('data:image/png;base64,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');
+                      background-size: calc(340.8px);
+                      background-position: calc(-42.72px) calc(-42.4779px);
+                    "
+                  ></div>
+                  <div data-v-52b18b80="" class="name">
+                    <div
+                      data-v-52b18b80=""
+                      class="label"
+                      style="color: var(--purple-2)"
+                    ></div>
+                    <div data-v-52b18b80="" class="nickname text-2">
+                      Newbie#1
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div data-v-52b18b80="" class="player-right">
+                  <!----><!---->
+                  <div data-v-52b18b80="" class="btn-report">report</div>
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="player">
+                <div data-v-52b18b80="" class="player-left">
+                  <!---->
+                  <div
+                    data-v-7dd84507=""
+                    data-v-52b18b80=""
+                    class="avatar"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-image: url('data:image/png;base64,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');
+                      background-size: calc(340.8px);
+                      background-position: calc(-42.72px) calc(-42.4779px);
+                    "
+                  ></div>
+                  <div data-v-52b18b80="" class="name">
+                    <div
+                      data-v-52b18b80=""
+                      class="label"
+                      style="color: var(--purple-2)"
+                    ></div>
+                    <div data-v-52b18b80="" class="nickname text-2">
+                      Auroraeum
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div data-v-52b18b80="" class="player-right">
+                  <div data-v-52b18b80="" class="btn-invite">clan</div>
+                  <div data-v-52b18b80="" class="btn-invite">friend</div>
+                  <div data-v-52b18b80="" class="btn-report">report</div>
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="player">
+                <div data-v-52b18b80="" class="player-left">
+                  <!---->
+                  <div
+                    data-v-7dd84507=""
+                    data-v-52b18b80=""
+                    class="avatar"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-image: url('data:image/png;base64,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');
+                      background-size: calc(340.8px);
+                      background-position: calc(-42.72px) calc(-42.4779px);
+                    "
+                  ></div>
+                  <div data-v-52b18b80="" class="name">
+                    <div
+                      data-v-52b18b80=""
+                      class="label"
+                      style="color: var(--purple-2)"
+                    ></div>
+                    <div data-v-52b18b80="" class="nickname text-2">
+                      Newbie#2
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div data-v-52b18b80="" class="player-right">
+                  <!----><!---->
+                  <div data-v-52b18b80="" class="btn-report">report</div>
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="player">
+                <div data-v-52b18b80="" class="player-left">
+                  <!---->
+                  <div
+                    data-v-7dd84507=""
+                    data-v-52b18b80=""
+                    class="avatar"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAPFBMVEUAAAAKCgoNDQ0PDw8RERESEhITExMWFhZAGRZIHBlQHxxWIh9jJiOCcnK2rqy2uK24sa+7s7G9s7HEx72y7N0/AAAAAXRSTlMAQObYZgAAAkxJREFUWMPFVgmShCAM1BVR0fEY/v/XzUEwo3jP1napBJQ2J5BlAcYYa82MbAEegSe32QrGVgC7TWDxaRMz4x+s1SpkV3GkwQWCHnCHQEzoJ0B/X4OeCfobGnAYLxOYbYSgbM2SvLD4oYqf9K2pKmzjJLDRLvIKM8pU+KKaCaQvrUzh/kxAYmWAl17Ar14A+HHoxzYSoEaRwDIX6BQJ8vz1yvMVwRzl3MKlNAoPUnUajRCYcUqZsG7FBHLWCKn3hvj1b4jjyM5bOTFRnOREChemL8cf0lhqitrt+KuyLorix3s/yLu6IdR1AxI8ZBw7rkmQXSBwkztHME1/RLA2oWD8EECoEULAMpkjVvGQIigJQlCW/MUA+twkoO+cG+BugoyQJgztELSIrhvgboOMkCYMLQnCfGSQv97WgL7oXAdXo2XXORlqXXdkAnwLV6tlms9DwHnsRK3vvgkQ+rL0PuaBdtwpJ3rGQADhsgZnCWpO7dDsEHCqcQ1omcKKFzWJgtLFdAs+y/6b4KkJt8GZOPeiQf4Rwfn5zwl2ovJMgyV4PRD5BgGvByJ/PZb+2GJeD0ReViOksVTjpg8IIn9X+8/1gDdBWgOylbwHrT6ujbqP+5o74hhU7iQI0tv6dwmemhAnh/1Bzg1qi28+VuNURWAiyw4lO9ZjArU3uB0ztgnU9gY721kfCAPsuY81CGeEcDyIta2XhxMm0BkDjwdxddHLQyqMV52oqpgIvI95kHSi9CkDEbEo56qUflID6SdTekGweS7YmrDS4OBc8AsDpD/nrbaZ+QAAAABJRU5ErkJggg==');
+                      background-size: calc(340.8px);
+                      background-position: calc(-42.72px) calc(-42.4779px);
+                    "
+                  ></div>
+                  <div data-v-52b18b80="" class="name">
+                    <div
+                      data-v-52b18b80=""
+                      class="label"
+                      style="color: var(--purple-2)"
+                    >
+                      Vanguard
+                    </div>
+                    <div data-v-52b18b80="" class="nickname text-2">
+                      Bedigar
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div data-v-52b18b80="" class="player-right">
+                  <div data-v-52b18b80="" class="btn-invite">clan</div>
+                  <div data-v-52b18b80="" class="btn-invite">friend</div>
+                  <div data-v-52b18b80="" class="btn-report">report</div>
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="player">
+                <div data-v-52b18b80="" class="player-left">
+                  <!---->
+                  <div
+                    data-v-7dd84507=""
+                    data-v-52b18b80=""
+                    class="avatar"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-image: url('data:image/png;base64,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');
+                      background-size: calc(340.8px);
+                      background-position: calc(-42.72px) calc(-42.4779px);
+                    "
+                  ></div>
+                  <div data-v-52b18b80="" class="name">
+                    <div
+                      data-v-52b18b80=""
+                      class="label"
+                      style="color: var(--purple-2)"
+                    >
+                      Appolo
+                    </div>
+                    <div data-v-52b18b80="" class="nickname text-2">
+                      Cr7sui
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div data-v-52b18b80="" class="player-right">
+                  <div data-v-52b18b80="" class="btn-invite">clan</div>
+                  <div data-v-52b18b80="" class="btn-invite">friend</div>
+                  <div data-v-52b18b80="" class="btn-report">report</div>
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="player">
+                <div data-v-52b18b80="" class="player-left">
+                  <!---->
+                  <div
+                    data-v-7dd84507=""
+                    data-v-52b18b80=""
+                    class="avatar"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      background-image: url('/assets/img/texture.334ffccf.png');
+                      background-size: calc(340.8px);
+                      background-position: calc(-42.72px) calc(-42.4779px);
+                    "
+                  ></div>
+                  <div data-v-52b18b80="" class="name">
+                    <div
+                      data-v-52b18b80=""
+                      class="label"
+                      style="color: var(--purple-2)"
+                    >
+                      Lore
+                    </div>
+                    <div data-v-52b18b80="" class="nickname text-2 primary">
+                      Word
+                      <img
+                        data-v-52b18b80=""
+                        src="/assets/img/verified.2106c319.svg"
+                        height="20"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div data-v-52b18b80="" class="player-right"><!----></div>
+              </div>
+            </div>
+          </div>
+          <div data-v-52b18b80="" class="right-container">
+            <div data-v-52b18b80="" class="head">
+              <div data-v-52b18b80="" class="head-label text-1">
+                <span data-v-52b18b80="">CHANGE WEAPON</span>
+              </div>
+              <div data-v-52b18b80="" class="head-right">
+                <button
+                  data-v-0453cd94=""
+                  data-v-52b18b80=""
+                  class="button right-btn invite2 rectangle"
+                  style="
+                    background-color: var(--secondary-5);
+                    --hover-color: #5c688f;
+                    --top: #5c688f;
+                    --bottom: #252e4b;
+                  "
+                >
+                  <div data-v-0453cd94="" class="triangle"></div>
+                  <div data-v-0453cd94="" class="text">SPECTATE</div>
+                  <div data-v-0453cd94="" class="borders">
+                    <div data-v-0453cd94="" class="border-top border"></div>
+                    <div data-v-0453cd94="" class="border-bottom border"></div>
+                  </div></button
+                ><button
+                  data-v-0453cd94=""
+                  data-v-52b18b80=""
+                  class="button right-btn invite2 rectangle"
+                  style="
+                    background-color: var(--secondary-5);
+                    --hover-color: #5c688f;
+                    --top: #5c688f;
+                    --bottom: #252e4b;
+                  "
+                >
+                  <div data-v-0453cd94="" class="triangle"></div>
+                  <div data-v-0453cd94="" class="text">
+                    <svg
+                      data-v-49b1054a=""
+                      data-v-52b18b80=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon-people-invite2 svg-icon svg-icon--people"
+                      data-v-0453cd94=""
+                    >
+                      <!---->
+                      <use
+                        data-v-49b1054a=""
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/img/icons.06608478.svg#people"
+                      ></use>
+                    </svg>
+                    INVITE
+                  </div>
+                  <div data-v-0453cd94="" class="borders">
+                    <div data-v-0453cd94="" class="border-top border"></div>
+                    <div data-v-0453cd94="" class="border-bottom border"></div>
+                  </div></button
+                ><button
+                  data-v-0453cd94=""
+                  data-v-52b18b80=""
+                  class="button right-btn people-list rectangle"
+                  style="
+                    background-color: var(--secondary-5);
+                    --hover-color: #5c688f;
+                    --top: #5c688f;
+                    --bottom: #252e4b;
+                  "
+                >
+                  <div data-v-0453cd94="" class="triangle"></div>
+                  <div data-v-0453cd94="" class="text">
+                    <svg
+                      data-v-49b1054a=""
+                      data-v-52b18b80=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon-settings icon-people svg-icon svg-icon--people"
+                      data-v-0453cd94=""
+                    >
+                      <!---->
+                      <use
+                        data-v-49b1054a=""
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/img/icons.06608478.svg#people"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div data-v-0453cd94="" class="borders">
+                    <div data-v-0453cd94="" class="border-top border"></div>
+                    <div data-v-0453cd94="" class="border-bottom border"></div>
+                  </div></button
+                ><button
+                  data-v-0453cd94=""
+                  data-v-52b18b80=""
+                  class="button right-btn rectangle"
+                  style="
+                    background-color: var(--secondary-5);
+                    --hover-color: #5c688f;
+                    --top: #5c688f;
+                    --bottom: #252e4b;
+                  "
+                >
+                  <div data-v-0453cd94="" class="triangle"></div>
+                  <div data-v-0453cd94="" class="text">
+                    <svg
+                      data-v-49b1054a=""
+                      data-v-52b18b80=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon-settings svg-icon svg-icon--settings"
+                      data-v-0453cd94=""
+                    >
+                      <!---->
+                      <use
+                        data-v-49b1054a=""
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/img/icons.06608478.svg#settings"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div data-v-0453cd94="" class="borders">
+                    <div data-v-0453cd94="" class="border-top border"></div>
+                    <div data-v-0453cd94="" class="border-bottom border"></div>
+                  </div></button
+                ><button
+                  data-v-0453cd94=""
+                  data-v-52b18b80=""
+                  class="button right-btn exit-btn rectangle"
+                  style="
+                    background-color: var(--red-5);
+                    --hover-color: var(--red-1);
+                    --top: var(--red-1);
+                    --bottom: var(--red-3);
+                  "
+                >
+                  <div data-v-0453cd94="" class="triangle"></div>
+                  <div data-v-0453cd94="" class="text">EXIT</div>
+                  <div data-v-0453cd94="" class="borders">
+                    <div data-v-0453cd94="" class="border-top border"></div>
+                    <div data-v-0453cd94="" class="border-bottom border"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              data-v-52b18b80=""
+              id="change-container"
+              class="change-container"
+            >
+              <!----><!---->
+              <div data-v-52b18b80="" class="gun-type">
+                <div data-v-52b18b80="" class="gun">
+                  <div data-v-52b18b80="" class="gun-name">MAC-10</div>
+                  <img
+                    data-v-52b18b80=""
+                    src="/assets/img/render-mini.fe8a8227.webp"
+                    alt="gun"
+                    class="gun-img"
+                  /><!---->
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="gun-type">
+                <div data-v-52b18b80="" class="gun">
+                  <div data-v-52b18b80="" class="gun-name">Weatie</div>
+                  <img
+                    data-v-52b18b80=""
+                    src="/assets/img/render-mini.d9a3620a.webp"
+                    alt="gun"
+                    class="gun-img"
+                  /><!---->
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="gun-type">
+                <div data-v-52b18b80="" class="gun">
+                  <div data-v-52b18b80="" class="gun-name">LAR</div>
+                  <img
+                    data-v-52b18b80=""
+                    src="/assets/img/render-mini.8d2f05be.webp"
+                    alt="gun"
+                    class="gun-img"
+                  /><!---->
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="gun-type">
+                <div data-v-52b18b80="" class="gun">
+                  <div data-v-52b18b80="" class="gun-name">Revolver</div>
+                  <img
+                    data-v-52b18b80=""
+                    src="/assets/img/render-mini.c73503b0.webp"
+                    alt="gun"
+                    class="gun-img"
+                  /><!---->
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="gun-type">
+                <div data-v-52b18b80="" class="gun">
+                  <div data-v-52b18b80="" class="gun-name">AR-9</div>
+                  <img
+                    data-v-52b18b80=""
+                    src="/assets/img/render-mini.d787fe4e.webp"
+                    alt="gun"
+                    class="gun-img"
+                  /><!---->
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="gun-type">
+                <div data-v-52b18b80="" class="gun">
+                  <div data-v-52b18b80="" class="gun-name">M60</div>
+                  <img
+                    data-v-52b18b80=""
+                    src="/assets/img/render-mini.00e7132a.webp"
+                    alt="gun"
+                    class="gun-img"
+                  /><!---->
+                </div>
+              </div>
+              <div data-v-52b18b80="" class="gun-type">
+                <div data-v-52b18b80="" class="gun">
+                  <div data-v-52b18b80="" class="gun-name">VITA</div>
+                  <img
+                    data-v-52b18b80=""
+                    src="/assets/img/render-mini.6cdd3304.webp"
+                    alt="gun"
+                    class="gun-img"
+                  />
+                  <div data-v-52b18b80="" class="selected"></div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div data-v-52b18b80="" id="cont-continue" class="cont-continue">
+              <div data-v-52b18b80="" id="timer" class="timer text-2">1</div>
+              <button
+                data-v-0453cd94=""
+                data-v-52b18b80=""
+                id="continue"
+                class="button continue rectangle animation"
+                style="
+                  background-color: var(--blue-4);
+                  --hover-color: var(--blue-5);
+                  --top: var(--blue-5);
+                  --bottom: var(--blue-6);
+                "
+              >
+                <div data-v-0453cd94="" class="triangle"></div>
+                <div data-v-0453cd94="" class="text">CONTINUE</div>
+                <div data-v-0453cd94="" class="borders">
+                  <div data-v-0453cd94="" class="border-top border"></div>
+                  <div data-v-0453cd94="" class="border-bottom border"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div
+            data-v-52b18b80=""
+            id="ad-change-weapon"
+            class="ad-change-weapon"
+          ></div>
+          <!----><!----><!----><!---->
+        </div>
+        <!---->
+        <div data-v-6bb80360="" data-v-148d66b6="" class="ach-cont">
+          <div data-v-6bb80360="" class="animate-cont" style="display: none">
+            <svg
+              data-v-6bb80360=""
+              xmlns="http://www.w3.org/2000/svg"
+              width="204"
+              height="204"
+              viewBox="0 0 204 204"
+              fill="none"
+              class="animate"
+            >
+              <!---->
+            </svg>
+            <div data-v-6bb80360="" class="text">
+              ASSIST
+              <span data-v-6bb80360=""
+                ><span
+                  data-v-6bb80360=""
+                  style="color: rgb(47, 233, 165); font-weight: 700"
+                  >+5</span
+                ></span
+              >
+            </div>
+            <br data-v-6bb80360="" />
+            <div data-v-6bb80360="" class="score">+5</div>
+            <br data-v-6bb80360="" />
+          </div>
+        </div>
+        <div data-v-148d66b6="" class="hitme-cont"><!----><!----></div>
+        <!---->
+        <div data-v-148d66b6="" class="sniper-mwNMW-cont" style="display: none">
+          <img
+            data-v-148d66b6=""
+            src="/assets/img/sniper-sc0pe.6fe76290.webp"
+            class="sniper-mwNMW"
+          />
+        </div>
+        <!----><!---->
+      </div>
+      <div data-v-41f90ca7="" data-v-2e3e77fa="" class="loading-scene">
+        <div data-v-41f90ca7="" class="progress"></div>
+        <div data-v-41f90ca7="" class="logo">
+          <div data-v-41f90ca7="" class="name-map">Fortress</div>
+          <div data-v-41f90ca7="" class="mode">Solo</div>
+        </div>
+        <div data-v-41f90ca7="" class="content">
+          <div data-v-41f90ca7="" class="players text-1 players-1">
+            <!----><!---->
+            <div data-v-41f90ca7="" class="player">
+              <div data-v-41f90ca7="" class="player-left">
+                <div
+                  data-v-7dd84507=""
+                  data-v-41f90ca7=""
+                  class="avatar"
+                  style="
+                    width: 4rem;
+                    height: 4rem;
+                    background-image: url('data:image/png;base64,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');
+                    background-size: calc(28.4rem);
+                    background-position: calc(-3.56rem) calc(-3.53982rem);
+                  "
+                ></div>
+                <div data-v-41f90ca7="" class="name text-2">
+                  <div
+                    data-v-41f90ca7=""
+                    class="label"
+                    style="color: var(--purple-2)"
+                  ></div>
+                  <div data-v-41f90ca7="" class="nickname">
+                    Newbie#1
+                    <!---->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div data-v-41f90ca7="" class="player">
+              <div data-v-41f90ca7="" class="player-left">
+                <div
+                  data-v-7dd84507=""
+                  data-v-41f90ca7=""
+                  class="avatar"
+                  style="
+                    width: 4rem;
+                    height: 4rem;
+                    background-image: url('data:image/png;base64,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');
+                    background-size: calc(28.4rem);
+                    background-position: calc(-3.56rem) calc(-3.53982rem);
+                  "
+                ></div>
+                <div data-v-41f90ca7="" class="name text-2">
+                  <div
+                    data-v-41f90ca7=""
+                    class="label"
+                    style="color: var(--purple-2)"
+                  ></div>
+                  <div data-v-41f90ca7="" class="nickname">
+                    Auroraeum
+                    <!---->
+                  </div>
+                </div>
+              </div>
+              <div data-v-41f90ca7="" class="level text-2">4</div>
+            </div>
+            <div data-v-41f90ca7="" class="player">
+              <div data-v-41f90ca7="" class="player-left">
+                <div
+                  data-v-7dd84507=""
+                  data-v-41f90ca7=""
+                  class="avatar"
+                  style="
+                    width: 4rem;
+                    height: 4rem;
+                    background-image: url('data:image/png;base64,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');
+                    background-size: calc(28.4rem);
+                    background-position: calc(-3.56rem) calc(-3.53982rem);
+                  "
+                ></div>
+                <div data-v-41f90ca7="" class="name text-2">
+                  <div
+                    data-v-41f90ca7=""
+                    class="label"
+                    style="color: var(--purple-2)"
+                  ></div>
+                  <div data-v-41f90ca7="" class="nickname">
+                    Newbie#2
+                    <!---->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div data-v-41f90ca7="" class="player">
+              <div data-v-41f90ca7="" class="player-left">
+                <div
+                  data-v-7dd84507=""
+                  data-v-41f90ca7=""
+                  class="avatar"
+                  style="
+                    width: 4rem;
+                    height: 4rem;
+                    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAPFBMVEUAAAAKCgoNDQ0PDw8RERESEhITExMWFhZAGRZIHBlQHxxWIh9jJiOCcnK2rqy2uK24sa+7s7G9s7HEx72y7N0/AAAAAXRSTlMAQObYZgAAAkxJREFUWMPFVgmShCAM1BVR0fEY/v/XzUEwo3jP1napBJQ2J5BlAcYYa82MbAEegSe32QrGVgC7TWDxaRMz4x+s1SpkV3GkwQWCHnCHQEzoJ0B/X4OeCfobGnAYLxOYbYSgbM2SvLD4oYqf9K2pKmzjJLDRLvIKM8pU+KKaCaQvrUzh/kxAYmWAl17Ar14A+HHoxzYSoEaRwDIX6BQJ8vz1yvMVwRzl3MKlNAoPUnUajRCYcUqZsG7FBHLWCKn3hvj1b4jjyM5bOTFRnOREChemL8cf0lhqitrt+KuyLorix3s/yLu6IdR1AxI8ZBw7rkmQXSBwkztHME1/RLA2oWD8EECoEULAMpkjVvGQIigJQlCW/MUA+twkoO+cG+BugoyQJgztELSIrhvgboOMkCYMLQnCfGSQv97WgL7oXAdXo2XXORlqXXdkAnwLV6tlms9DwHnsRK3vvgkQ+rL0PuaBdtwpJ3rGQADhsgZnCWpO7dDsEHCqcQ1omcKKFzWJgtLFdAs+y/6b4KkJt8GZOPeiQf4Rwfn5zwl2ovJMgyV4PRD5BgGvByJ/PZb+2GJeD0ReViOksVTjpg8IIn9X+8/1gDdBWgOylbwHrT6ujbqP+5o74hhU7iQI0tv6dwmemhAnh/1Bzg1qi28+VuNURWAiyw4lO9ZjArU3uB0ztgnU9gY721kfCAPsuY81CGeEcDyIta2XhxMm0BkDjwdxddHLQyqMV52oqpgIvI95kHSi9CkDEbEo56qUflID6SdTekGweS7YmrDS4OBc8AsDpD/nrbaZ+QAAAABJRU5ErkJggg==');
+                    background-size: calc(28.4rem);
+                    background-position: calc(-3.56rem) calc(-3.53982rem);
+                  "
+                ></div>
+                <div data-v-41f90ca7="" class="name text-2">
+                  <div
+                    data-v-41f90ca7=""
+                    class="label"
+                    style="color: var(--purple-2)"
+                  >
+                    Vanguard
+                  </div>
+                  <div data-v-41f90ca7="" class="nickname">
+                    Bedigar
+                    <!---->
+                  </div>
+                </div>
+              </div>
+              <div data-v-41f90ca7="" class="level text-2">28</div>
+            </div>
+          </div>
+          <div data-v-41f90ca7="" class="players text-1 players-2">
+            <!----><!---->
+            <div data-v-41f90ca7="" class="player">
+              <div data-v-41f90ca7="" class="player-left">
+                <div
+                  data-v-7dd84507=""
+                  data-v-41f90ca7=""
+                  class="avatar"
+                  style="
+                    width: 4rem;
+                    height: 4rem;
+                    background-image: url('data:image/png;base64,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');
+                    background-size: calc(28.4rem);
+                    background-position: calc(-3.56rem) calc(-3.53982rem);
+                  "
+                ></div>
+                <div data-v-41f90ca7="" class="name text-2">
+                  <div
+                    data-v-41f90ca7=""
+                    class="label"
+                    style="color: var(--purple-2)"
+                  >
+                    Appolo
+                  </div>
+                  <div data-v-41f90ca7="" class="nickname">
+                    Cr7sui
+                    <!---->
+                  </div>
+                </div>
+              </div>
+              <div data-v-41f90ca7="" class="level text-2">4</div>
+            </div>
+            <div data-v-41f90ca7="" class="player">
+              <div data-v-41f90ca7="" class="player-left">
+                <div
+                  data-v-7dd84507=""
+                  data-v-41f90ca7=""
+                  class="avatar"
+                  style="
+                    width: 4rem;
+                    height: 4rem;
+                    background-image: url('/assets/img/texture.334ffccf.png');
+                    background-size: calc(28.4rem);
+                    background-position: calc(-3.56rem) calc(-3.53982rem);
+                  "
+                ></div>
+                <div data-v-41f90ca7="" class="name text-2">
+                  <div
+                    data-v-41f90ca7=""
+                    class="label"
+                    style="color: var(--purple-2)"
+                  >
+                    Lore
+                  </div>
+                  <div data-v-41f90ca7="" class="nickname">
+                    Word
+                    <img
+                      data-v-41f90ca7=""
+                      src="/assets/img/verified.2106c319.svg"
+                      height="20"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div data-v-41f90ca7="" class="level text-2">14</div>
+            </div>
+          </div>
+        </div>
+        <div data-v-41f90ca7="" class="map-cont"></div>
+        <div data-v-41f90ca7="" class="tip">Free for all</div>
+        <div data-v-41f90ca7="" class="loading">LOADING...</div>
+        <div data-v-41f90ca7="" class="background-cont">
+          <div
+            data-v-41f90ca7=""
+            class="bg-image"
+            style="
+              background: url('/assets/img/full-preview.680136c1.webp') 0% 0% /
+                cover no-repeat;
+            "
+          ></div>
+          <div data-v-41f90ca7="" class="background"></div>
+        </div>
+        <div data-v-41f90ca7="" class="progress"></div>
+      </div>
+      <div
+        data-v-07e77e6c=""
+        data-v-2e3e77fa=""
+        id="view"
+        class="view"
+        style="display: none"
+      >
+        <div data-v-07e77e6c="" class="background">
+          <div data-v-07e77e6c="" class="container">
+            <div data-v-d5ad4872="" data-v-07e77e6c="" class="top-bar">
+              <div data-v-d5ad4872="" class="left">
+                <div data-v-d5ad4872="" class="home">
+                  <svg
+                    data-v-49b1054a=""
+                    data-v-d5ad4872=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon-home svg-icon svg-icon--home"
+                  >
+                    <!---->
+                    <use
+                      data-v-49b1054a=""
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/img/icons.06608478.svg#home"
+                    ></use>
+                  </svg>
+                </div>
+                <div data-v-d5ad4872="" class="text-2 name-page">GAME</div>
+              </div>
+              <div data-v-d5ad4872="" class="close">
+                <svg
+                  data-v-49b1054a=""
+                  data-v-d5ad4872=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-close svg-icon svg-icon--close"
+                >
+                  <!---->
+                  <use
+                    data-v-49b1054a=""
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/img/icons.06608478.svg#close"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div data-v-07e77e6c="" class="content">
+              <div data-v-2e3e77fa="" data-v-07e77e6c=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-v-2e3e77fa=""
+        class="vue-notification-group"
+        id="notifications"
+        style="width: 300px; bottom: 0px; left: 0px"
+      >
+        <span></span>
+      </div>
+      <!----><!---->
+    </div>
+  </body>
+</html>
