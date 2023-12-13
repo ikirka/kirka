@@ -1,0 +1,678 @@
+@import url('https://ikirka.github.io/kirka/themes/old/kirka.theme.css'); /* old kirka theme */
+@import url('https://ikirka.github.io/kirka/snippets/advent-calendar.css'); /* advent calendar */
+.interface .background:before,
+.interface .background:after{
+      animation: moveAndSpin 40s linear infinite;
+}
+.interface .background:before {
+    content: '';
+    white-space: pre;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    color: white;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183614013339353168/gw.png?ex=6588f973&is=65768473&hm=82d7455ea8cd42b3be93ae156b6f31da915c4e732ed349b01fbe8a01da3db30b&') center/cover;
+    -webkit-mask-image: radial-gradient(circle at center, black 5%, transparent 100%);
+    mask-image: radial-gradient(circle at center, black 5%, transparent 100%);
+}
+.interface .background:after{
+    content: 'CSS By: \A George Washington \A The Founding Father';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    white-space: pre;
+}
+
+@keyframes moveAndSpin {
+    0%, 100% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 200px); /* Adjusted for box width */
+        transform: rotate(90deg);
+    }
+    50% {
+        top: calc(100% - 200px); /* Adjusted for box height */
+        left: calc(100% - 200px);
+        transform: rotate(180deg);
+    }
+    75% {
+        top: calc(100% - 200px);
+        left: 0;
+        transform: rotate(270deg);
+    }
+}
+
+
+/* funnies */
+.avatar{
+    background: url('https://media.tenor.com/WQYrfTW2mokAAAAd/glock-in-my-rari.gif') !important;
+    background-size: cover !important;
+    background-position: unset !important;
+}
+.game-interface .chat:focus-within{
+    align-items: center;
+}
+.game-interface .chat .info{
+    display: none;
+}
+.game-interface .chat:focus-within:before{
+    content: "";
+      position: absolute;
+      background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183500599749259354/istockphoto-594062910-612x612_1.png?ex=65888fd3&is=65761ad3&hm=9fcd6d3903c5f676a46b91f2edf3d3ad00c3d718890e0b4a0b9a2d5ba0eca7ac&') 100% / 100% no-repeat !important;
+      background-size: cover;
+    height: 40rem;
+    width: 30rem;
+    top: -285px;
+    z-index: -1;
+    animation: fadeInOut 4s ease-in-out forwards;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.game-interface .chat:focus-within .messages{
+    background: transparent !important;
+    width: 24rem;
+    
+}
+.game-interface .chat:focus-within .messages *{
+    text-shadow: black 1px 0 10px;
+}
+div.confetti:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183291273206054942/tenor.gif') 100% / 100% no-repeat;
+    box-shadow: 0 0 15px 15px var(--secondary-1) inset;
+}
+.quests-container .rewards{
+    position: unset !important;
+}
+.quests-container .rewards canvas.confetti{
+    height: 25%;
+    visibility: hidden;
+}
+.game-interface .hp-progress{
+    position: relative;
+}
+.game-interface .hp-progress[style*="width: 0%"],
+.game-interface .hp-progress[style*="width: 1%"],
+.game-interface .hp-progress[style*="width: 2%"],
+.game-interface .hp-progress[style*="width: 3%"],
+.game-interface .hp-progress[style*="width: 4%"],
+.game-interface .hp-progress[style*="width: 5%"],
+.game-interface .hp-progress[style*="width: 6%"],
+.game-interface .hp-progress[style*="width: 7%"],
+.game-interface .hp-progress[style*="width: 8%"],
+.game-interface .hp-progress[style*="width: 9%"],
+.game-interface .hp-progress[style*="width: 10%"],
+.game-interface .hp-progress[style*="width: 11%"],
+.game-interface .hp-progress[style*="width: 12%"],
+.game-interface .hp-progress[style*="width: 13%"],
+.game-interface .hp-progress[style*="width: 14%"],
+.game-interface .hp-progress[style*="width: 15%"],
+.game-interface .hp-progress[style*="width: 16%"],
+.game-interface .hp-progress[style*="width: 17%"],
+.game-interface .hp-progress[style*="width: 18%"],
+.game-interface .hp-progress[style*="width: 19%"],
+.game-interface .hp-progress[style*="width: 20%"],
+.game-interface .hp-progress[style*="width: 21%"],
+.game-interface .hp-progress[style*="width: 22%"],
+.game-interface .hp-progress[style*="width: 23%"],
+.game-interface .hp-progress[style*="width: 24%"],
+.game-interface .hp-progress[style*="width: 25%"],
+.game-interface .hp-progress[style*="width: 26%"],
+.game-interface .hp-progress[style*="width: 27%"],
+.game-interface .hp-progress[style*="width: 28%"],
+.game-interface .hp-progress[style*="width: 29%"],
+.game-interface .hp-progress[style*="width: 30%"],
+.game-interface .hp-progress[style*="width: 31%"],
+.game-interface .hp-progress[style*="width: 32%"],
+.game-interface .hp-progress[style*="width: 33%"],
+.game-interface .hp-progress[style*="width: 34%"],
+.game-interface .hp-progress[style*="width: 35%"],
+.game-interface .hp-progress[style*="width: 36%"],
+.game-interface .hp-progress[style*="width: 37%"],
+.game-interface .hp-progress[style*="width: 38%"],
+.game-interface .hp-progress[style*="width: 39%"],
+.game-interface .hp-progress[style*="width: 40%"],
+.game-interface .hp-progress[style*="width: 41%"],
+.game-interface .hp-progress[style*="width: 42%"],
+.game-interface .hp-progress[style*="width: 43%"],
+.game-interface .hp-progress[style*="width: 44%"],
+.game-interface .hp-progress[style*="width: 45%"],
+.game-interface .hp-progress[style*="width: 46%"],
+.game-interface .hp-progress[style*="width: 47%"],
+.game-interface .hp-progress[style*="width: 48%"],
+.game-interface .hp-progress[style*="width: 49%"],
+.game-interface .hp-progress[style*="width: 50%"] {
+    background: #fc6136 !important;
+}
+
+.game-interface .hp-progress[style*="width: 0%"]:before,
+.game-interface .hp-progress[style*="width: 1%"]:before,
+.game-interface .hp-progress[style*="width: 2%"]:before,
+.game-interface .hp-progress[style*="width: 3%"]:before,
+.game-interface .hp-progress[style*="width: 4%"]:before,
+.game-interface .hp-progress[style*="width: 5%"]:before,
+.game-interface .hp-progress[style*="width: 6%"]:before,
+.game-interface .hp-progress[style*="width: 7%"]:before,
+.game-interface .hp-progress[style*="width: 8%"]:before,
+.game-interface .hp-progress[style*="width: 9%"]:before,
+.game-interface .hp-progress[style*="width: 10%"]:before,
+.game-interface .hp-progress[style*="width: 11%"]:before,
+.game-interface .hp-progress[style*="width: 12%"]:before,
+.game-interface .hp-progress[style*="width: 13%"]:before,
+.game-interface .hp-progress[style*="width: 14%"]:before,
+.game-interface .hp-progress[style*="width: 15%"]:before,
+.game-interface .hp-progress[style*="width: 16%"]:before,
+.game-interface .hp-progress[style*="width: 17%"]:before,
+.game-interface .hp-progress[style*="width: 18%"]:before,
+.game-interface .hp-progress[style*="width: 19%"]:before,
+.game-interface .hp-progress[style*="width: 20%"]:before,
+.game-interface .hp-progress[style*="width: 21%"]:before,
+.game-interface .hp-progress[style*="width: 22%"]:before,
+.game-interface .hp-progress[style*="width: 23%"]:before,
+.game-interface .hp-progress[style*="width: 24%"]:before,
+.game-interface .hp-progress[style*="width: 25%"]:before,
+.game-interface .hp-progress[style*="width: 26%"]:before,
+.game-interface .hp-progress[style*="width: 27%"]:before,
+.game-interface .hp-progress[style*="width: 28%"]:before,
+.game-interface .hp-progress[style*="width: 29%"]:before,
+.game-interface .hp-progress[style*="width: 30%"]:before,
+.game-interface .hp-progress[style*="width: 31%"]:before,
+.game-interface .hp-progress[style*="width: 32%"]:before,
+.game-interface .hp-progress[style*="width: 33%"]:before,
+.game-interface .hp-progress[style*="width: 34%"]:before,
+.game-interface .hp-progress[style*="width: 35%"]:before,
+.game-interface .hp-progress[style*="width: 36%"]:before,
+.game-interface .hp-progress[style*="width: 37%"]:before,
+.game-interface .hp-progress[style*="width: 38%"]:before,
+.game-interface .hp-progress[style*="width: 39%"]:before,
+.game-interface .hp-progress[style*="width: 40%"]:before,
+.game-interface .hp-progress[style*="width: 41%"]:before,
+.game-interface .hp-progress[style*="width: 42%"]:before,
+.game-interface .hp-progress[style*="width: 43%"]:before,
+.game-interface .hp-progress[style*="width: 44%"]:before,
+.game-interface .hp-progress[style*="width: 45%"]:before,
+.game-interface .hp-progress[style*="width: 46%"]:before,
+.game-interface .hp-progress[style*="width: 47%"]:before,
+.game-interface .hp-progress[style*="width: 48%"]:before,
+.game-interface .hp-progress[style*="width: 49%"]:before,
+.game-interface .hp-progress[style*="width: 50%"]:before {
+    content: "Echoes of doom - your demise is imminent!";
+    display: grid;
+    place-items: center;
+    position: absolute;
+    color: white;
+    right: -50vw;
+    bottom: 25vw;
+    font-size: 1.5rem;
+    height: 100%;
+    min-width: 400px;
+    font-weight: bold;
+}
+.game-interface .hp-progress[style*="width: 0%"]:before{
+    content: "You have met your demise!" !important;
+}
+.crosshair-cont ~ .hit{
+    position: relative;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183504994742308924/5bbc1e83a839b-d387fe42c0a15de7844255c20f7602f8.png?ex=658893eb&is=65761eeb&hm=f44eb9d8c2c21a41b0bc1670581afcf79eee3d035c8d9c5c6bb588e2f927e2b3&') 100% / 100% no-repeat !important;
+    padding: 2rem;
+    opacity: .5;
+}
+.game-interface .mini-map-cont{
+    width: 15rem;
+    left: 0 !important;
+    height: 15rem;
+    top: 0 !important;
+}
+.game-interface .mini-map-cont .name{
+    width: max-content;
+    left: 8px !important;
+    bottom: -50px !important;
+    top: unset;
+    font-size: 1.5rem;
+}
+.game-interface .mini-map-cont .name:before{
+    content: "Battle of Yorktown on";
+    margin-right: .25rem;
+}
+.game-interface .mini-map-cont:before{
+    content: "";
+    position: absolute;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1183517813890109480/rb_mntvernon_siegeyorktown_final-web.png?ex=65889fdb&is=65762adb&hm=2ca79cdb5f305a3a85b6a648109a06ebaa84b1b0a69cf4091886bf8a3092be94&') 100% / 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border: 8px solid var(--secondary-1);
+    opacity: .5;
+}
+#app .end-modal{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184071764070912010/Surrender_of_Lord_Cornwallis.png?ex=658aa3c3&is=65782ec3&hm=fa9bc2f0a4c18e9e1ae0c2ea82675fae36b359ffe0cf538968a8f15249c42a96&') 100%/ 100% !important;
+}
+#app .end-modal .head .nickname{
+    font-size: 0;
+}
+#app .end-modal .head .clan-tag{
+    font-size: 0;
+}
+#app .end-modal .head .lvl-leader{
+    font-size: 0;
+}
+#app .end-modal .head:nth-child(1) .clan-tag:before{
+    content: "America";
+    font-size: 1rem;
+}
+#app .end-modal .head:nth-child(1) .nickname:before{
+    content: "George Washington";
+    font-size: 1.25rem;
+}
+#app .end-modal .head:nth-child(1) .lvl-leader:before{
+    content: "49";
+    font-size: 1.875rem;
+}
+#app .end-modal .head:nth-child(2) .clan-tag:before{
+    content: "Britsh";
+    font-size: 1rem;
+}
+#app .end-modal .head:nth-child(2) .nickname:before{
+    content: "Charles Cornwallis";
+    font-size: 1.25rem;
+}
+#app .end-modal .head:nth-child(2) .lvl-leader:before{
+    content: "42";
+    font-size: 1.875rem;
+}
+#app .end-modal .head:nth-child(3) .clan-tag:before{
+    content: "French";
+    font-size: 1rem;
+}
+#app .end-modal .head:nth-child(3) .nickname:before{
+    content: "Marquis de Lafayette";
+    font-size: 1.25rem;
+}
+#app .end-modal .head:nth-child(3) .lvl-leader:before{
+    content: "24";
+    font-size: 1.875rem;
+}
+.loading-scene:before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 202px;
+  background: url('https://i.imgflip.com/7ysb0k.gif');
+z-index: 999;
+bottom: 0;
+}
+.interface>.background>.pattern-bg{
+       background: url(https://cdn.discordapp.com/attachments/1117089952161857537/1183525252014284850/george-washington-6473885_960_720.webp?ex=6588a6c8&is=657631c8&hm=b44f2870ca4409f602b1b2a876de721e88bbd99f9c38532b49eae4a1b27a113d&) repeat;
+      background-size: 50px;
+      transform: rotate(45deg) scale(5);
+  }
+   .left-icons>.icon-btn{
+       height: min-content !important;
+       max-height: 5rem;
+   }
+ .left-icons .text-icon{
+     font-size: 0;
+ }
+ .left-icons .icon-btn .text-icon:after{
+      font-size: 1rem;
+ }
+.left-icons .HUB .text-icon:after{
+    content: "Colonial Square";
+}
+.left-icons .STORE .text-icon:after{
+    content: "Merchant";
+}
+.left-icons .SERVERS .text-icon:after{
+    content: "Colonies";
+}
+
+.left-icons .QUESTS .text-icon:after{
+    content: "Expeditions";
+}
+.left-icons .FRIENDS .text-icon:after{
+    content: "Comrades";
+}
+.left-icons .INVENTORY .text-icon:after{
+    content: "The Barracks";
+}
+.left-icons .MAP .text-icon:after{
+    content: "Cartographer's Workshop";
+}
+.play-content-up .select-mod{
+    font-size: 0;
+}
+.play-content-up .select-mod:after{
+    content: "Colonial Campaigns";
+    font-size: 1.5rem;
+}
+.play-content-up .private-btn span{
+    font-size: 0;
+}
+.play-content-up .private-btn span:after{
+    content: "Establish Outpost";
+    font-size: 1.25rem;
+}
+.play-content .play-content-up{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 350px;
+}
+.play-content #play-btn .text{
+    font-size: 0;
+}
+.play-content #play-btn .text:after{
+    content: "March into Battle";
+    font-size: 1.875rem;
+}
+#dailyQuests .tab{
+    font-size: 0;
+}
+#dailyQuests .daily:after{
+    content: "Daily Expeditions";
+    font-size: 1rem;
+}
+#dailyQuests .event:after{
+    content: "Event Expeditions";
+    font-size: 1rem;
+}
+.servers .tab{
+    font-size: 0 !important;
+}
+.servers .tab:after{
+    font-size: 0.86rem;
+}
+.servers .tab:nth-child(1):after{
+    content: "Continental Assembly";
+}
+.servers .tab:nth-child(2):after{
+    content: "Patriot's Obstacle Course";
+}
+.servers .tab:nth-child(3):after{
+    content: "Independent Outposts";
+}
+.servers .enter{
+    font-size: 0 !important;
+}
+.servers .enter:after{
+    content: "relay";
+    font-size: 1rem;
+}
+.servers .available-rooms{
+    width: 30.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.servers .available-rooms:before{
+    content: "Continental Deployments";
+    margin-right: .25rem;
+}
+.servers .join{
+    width: fit-content !important;
+}
+.servers .join .text{
+    font-size: 0 !important;
+}
+.servers .join .text:after{
+    content: "TO BATTLE";
+    font-size: .875rem;
+}
+.servers .scrollCancel{
+    font-size: 0 !important;
+}
+.servers .scrollCancel:after{
+    content: "⇩ Continue Parchment Unfurling";
+    font-size: 1rem;
+}
+.servers .chat-label{
+    font-size: 0 !important;
+}
+.servers .chat-label:after{
+    content: "Tavern Talk";
+    font-size: 1.5rem;
+}
+.servers .rules-label{
+    font-size: 0 !important;
+}
+.servers .rules-label:after{
+    content: "Articles of Conduct";
+    font-size: 1rem;
+}
+.servers .trade .SERVER{
+    font-size: 0;
+}
+.servers .trade .SERVER:after{
+    content: "Continental Announcements";
+    font-size: 1rem;
+}
+.container .name-page{
+    visibility: hidden;
+}
+.servers .spectate-btn{
+    width: fit-content !important;
+}
+.servers .spectate-btn .text{
+    font-size: 0;
+}
+.servers .spectate-btn .text:after{
+    content: "Observe";
+    font-size: 1rem;
+}
+.servers .join-btn{
+    width: fit-content !important;
+}
+.servers .join-btn .text{
+    font-size: 0;
+}
+.servers .join-btn .text:after{
+    content: "TO BATTLE";
+    font-size: 1rem;
+}
+.servers .message .value.bot{
+    font-size: 0 !important;
+}
+.servers .message .value.bot:after{
+    content: "Merchant's Ledger";
+    font-size: 1rem;
+}
+.moneys .money:first-of-type:before{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 32px;
+    width: 32px;
+    margin-right: .5rem;
+}
+
+.store .top .coins:after,
+.hub-container .count:before,
+.reward.coins:first-of-type:before,
+.store #carousel .price-value:after,
+.moneys .money:first-of-type:before{
+    content: "";
+    border-radius: 50%;
+}
+.moneys .money:first-of-type svg,
+.store .top .coins+svg,
+.store #carousel .price svg,
+.hub-container .count img{
+    display: none;
+}
+.reward.coins img{
+   display: none !important;
+}
+.reward.coins:first-of-type:before{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 20px;
+    width: 20px;
+}
+.store .top .coins{
+    display: flex;
+    align-items: center;
+}
+.store .top .coins:after{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 32px;
+    width: 32px;
+    margin-left: .5rem;
+}
+.store #carousel .price-value{
+    display: flex;
+    align-items: center;
+}
+.store #carousel .price-value:after{
+     background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 52px;
+    width: 52px;
+    margin-left: .5rem;
+}
+.store .money-bottom .coins{
+    content: url('https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif');
+    width: 75% !important;
+    top: 3rem;
+}
+.hub-container .count{
+    display: flex;
+    align-items: center;
+}
+.hub-container .count:before{
+    background: url("https://c.tenor.com/ssozSwQbSI0AAAAC/tenor.gif") 50% / 450% no-repeat;
+    height: 22px;
+    width: 22px;
+    margin-right: .5rem;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .head{
+    font-size: 0;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .head:before{
+    content: "Articles of Conduct";
+    font-size: 1.5rem;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item{
+    font-size: 0;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:before{
+    font-size: 1.25rem;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(1):before {
+    content: "1. Conduct in the Spirit of Civility";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(2):before {
+    content: "2. Uphold Virtuous Discourse";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(3):before {
+    content: "3. Eschew External Correspondences";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(4):before {
+    content: "4. Guard Against Superfluous Dispatches";
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .item:nth-child(5):before {
+    content: "5. Beware of Deceptive Machinations";
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close-btn{
+    width: fit-content;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close-btn .text{
+    font-size: 0;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close-btn .text:before{
+    content: "Return to duty";
+    font-size: 1.25rem;
+}
+.left-icons .HUB:before{
+    content: "Patriots' Alliances" !important;
+}
+.left-icons .HUB:after{
+    content: "Founders' Ranking" !important;
+    left: 215px !important;
+}
+.game-interface .gun-type .gun-name{
+    font-size: 0;
+}
+.game-interface .gun-type:nth-child(1) .gun-name:before{
+    content: "Patriot's Repeater";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(2) .gun-name:before{
+    content: "Liberty Scattergun";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(3) .gun-name:before{
+    content: "Colonial Harquebus";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(4) .gun-name:before{
+    content: "Freedom Twirl";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(5) .gun-name:before{
+    content: "Swift Liberty Blaze";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(6) .gun-name:before{
+    content: "Musketeer's Fury";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(7) .gun-name:before{
+    content: "Eagle's Gaze";
+    font-size: 1rem;
+}
+.game-interface .gun-type:nth-child(8) .gun-name:before{
+    content: "Hawk's Whisper";
+    font-size: 1rem;
+}
+.game-interface .right-container .head-label{
+    font-size: 0;
+}
+.game-interface .right-container .head-label:before{
+    content: 'Switch Armament';
+    font-size: 1.5rem;
+}
+.game-interface .right-container .button .text{
+    font-size: 0;
+}
+.game-interface .right-container .button .text:before{
+    font-size: 1rem;
+}
+.game-interface .invite2:first-of-type .text:before{
+    content: "Observe";
+}
+.game-interface .invite2:first-of-type + .invite2 .text:before{
+    content: "Dispatch Summons";
+}
+.game-interface .right-container .exit-btn .text:before{
+    content: "Withdraw to Camp";
+}
+.game-interface .right-container .continue .text:before{
+    content: "Press Onward";
+}
+.game-interface .left-container .players-label{
+    font-size: 0;
+}
+.game-interface .left-container .players-label:before{
+    content: "Frontiersmen";
+    font-size: 1.5rem;
+}

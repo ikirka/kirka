@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Akira;
+    font-weight: 0 1000;
+    src: url(https://ikirka.github.io/kirka/fonts/Akira%20Expanded.otf) format('OpenType');
+    font-display: swap
+}
+.desktop-game-interface *{
+    font-family: Akira !important;
+}
+.game-interface .instruction,
+.game-interface .info-key-cont,
+.game-interface .weapon .name,
+.kill-death svg{
+    display: none !important;
+}
+.ammunition+div{
+    font-family: system-ui !important;
+}
+.game-interface .state-cont{
+    display: flex;
+    flex-direction: row;
+    top: 0 !important;
+    left: 0 !important;
+}
+.game-interface .weapon{
+    height: 60px;
+}
+.state-cont .timer{
+    width: 210px;
+    height: 60px;
+    padding: 0 !important;
+    margin: 0!important;
+    background: transparent !important;
+    font-size: 3rem !important;
+    box-shadow: unset !important;
+    justify-content: unset !important;
+    padding-left: 1rem !important;
+}
+.state-cont .kill-death .bg{
+    justify-content: unset !important;
+    background: transparent;
+    font-size: .875rem;
+    box-shadow: unset !important;
+    padding: 0;
+    padding-top: 1rem;
+    align-items: unset !important;
+}
+.state-cont .kill-death .kill:before{
+    content: "kills";
+    margin-right: 0.5rem;
+}
+.state-cont .kill-death .death:before{
+    content: "deaths";
+    margin-right: 0.5rem;
+}
+.game-interface .mini-map-cont{
+    left: 0 !important;
+    width: 210px;
+    height: 60px;
+    top: 50px !important;
+    text-align: left;
+    padding-left: 1rem;
+}
+.game-interface .mini-map-cont *{
+    position: unset !important;
+}
+.mini-map-cont .name{
+    font-size: 1rem !important;
+}
+.mini-map-cont .mod{
+    display: block !important;
+    font-size: 0.5rem !important;
+    opacity: .85;
+}
+.game-interface .messages{
+    background: hsl(0, 100%, 0%, .5) !important;
+    border-radius: 0 !important;
+}
+.game-interface [placeholder="MESSAGE..."]{
+    margin: 0 !important;
+    background: hsl(0, 100%, 0%, .5) !important;
+    border-radius: 0 !important;
+}
+.game-interface .state{
+    left: 0 !important;
+    bottom: 0 !important;
+    padding: 0 0 1rem 1rem !important;
+    max-width: 30rem !important;
+    opacity: unset !important;
+}
+.game-interface .cont-endurance{
+    background: hsl(0, 100%, 0%, .5) !important;
+    margin-bottom: .2rem !important;
+    border-radius: 0 !important;
+    height: .875rem !important;
+    margin-right: 0 !important;
+    width: 100%;
+    padding: .2rem !important;
+}
+.game-interface .cont-endurance div{
+    background: white;
+    height: 100%;
+    border-radius: 0 !important;
+}
+.game-interface .hp{
+    opacity: unset !important;
+}
+.game-interface .hp-title{
+    background: hsl(0, 100%, 0%, .5) !important;
+    border-radius: 0 !important;
+}
+.game-interface .cont-hp{
+    background: hsl(0, 100%, 0%, .5) !important;
+    border-radius: 0 !important;
+}
+.game-interface .cont-hp div{
+    border-radius: 0 !important;
+}
+#app:before{
+    content: "by: word";
+    position: absolute;
+    opacity: .5;
+    font-size: .5rem;
+    bottom: .5rem;
+    right: .5rem;
+    z-index: 9999;
+    text-transform: uppercase;
+}

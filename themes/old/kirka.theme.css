@@ -42,6 +42,7 @@
        position: unset !important;
        flex-direction: row !important;
        justify-content: space-between;
+       z-index: 1;
   }
   .interface .left-interface .money{
        position: relative;
@@ -67,8 +68,15 @@
       grid-area: play;
   }
   .interface .team-section{
-      grid-area: player;
-      margin-right: 5.5vw;
+     justify-content: center;
+     position: absolute !important;
+     width: 100vw;
+     height: 100vh;
+     z-index: 0 !important;
+     pointer-events: none !important;
+  }
+  .interface .team-section .player{
+      pointer-events: auto;
   }
   .interface .left-icons{
       position: absolute !important;
@@ -285,3 +293,19 @@
       width: unset !important;
        padding: 1rem .8rem .5rem .8rem;
   }
+@media (min-width: 1280px) and (max-width: 1280px){
+    .interface .left-icons{
+        width: 115vw;
+    }
+  .left-icons .FRIENDS,
+  .left-icons .INVENTORY{
+      margin-top: 18rem;
+  }
+  .left-interface .moneys{
+      position: absolute;
+      right: -12.5rem;
+  }
+  .left-icons .HUB:after{
+      left: 104px;
+  }
+
