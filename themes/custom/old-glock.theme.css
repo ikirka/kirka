@@ -1,5 +1,5 @@
-@import url('https://ikirka.github.io/kirka/themes/old/kirka.theme.css'); /* old kirka theme */
-@import url('https://ikirka.github.io/kirka/snippets/advent-calendar.css'); /* advent calendar */
+@import url('https://ikirka.github.io/kirka/themes/old/kirka.theme.css'); /*  old kirka theme  */
+@import url('https://ikirka.github.io/kirka/snippets/advent-calendar.css'); /*  advent calendar  */
 .interface .background:before,
 .interface .background:after{
       animation: moveAndSpin 40s linear infinite;
