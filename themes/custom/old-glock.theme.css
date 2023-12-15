@@ -414,6 +414,10 @@ bottom: 0;
 }
 .servers .enter{
     font-size: 0 !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184339508766974104/old-gray-tin-metal-texture.png?ex=658b9d1e&is=6579281e&hm=3f7da1224867d76b79621db6d8dc9583fc77331e81d46c046cb9fe4f1bd0274d&') !important;
+       box-shadow: black 1px 0 10px !important;
+      color: white !important;
+      background-size: cover !important;
 }
 .servers .enter:after{
     content: "relay";
@@ -560,6 +564,23 @@ bottom: 0;
     width: 22px;
     margin-right: .5rem;
 }
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .container-card{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184340326287163462/old-parchment-paper-scroll-sheet-vintage-aged-or-texture-background-png.png') 100% / 100% no-repeat !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: unset !important;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .list{
+    margin: 4rem;
+    margin-bottom:  2rem;
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .list *{
+     font-weight: bold ;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close{
+    border-radius: .25rem;
+}
 .vm--container .vm--overlay[data-modal="rules-modal"] ~ div .head{
     font-size: 0;
 }
@@ -675,4 +696,49 @@ bottom: 0;
 .game-interface .left-container .players-label:before{
     content: "Frontiersmen";
     font-size: 1.5rem;
+}
+.servers .chat .messages{
+    background: url('https://t4.ftcdn.net/jpg/00/92/47/85/360_F_92478590_BbuqPZQDFPOOjIbhQajB3oq2z5cfsVZt.jpg') 100% /100% !important;
+    box-shadow: black 1px 0 10px;
+
+}
+.servers .chat .messages *{
+    text-shadow: black 1px 0 10px;
+}
+.servers .chat .messages .trade{
+     background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184325404471853156/oldpaper-banner.png?ex=658b8ffc&is=65791afc&hm=ed76f61878659aa8a5cc2a7c0213fb21cb303d9d6def04df6b502aafe83e9b21&g') !important;
+      box-shadow: black 1px 0 10px;
+     margin: 0 0.5rem;
+     padding: .5rem;
+     background-size: cover !important;
+}
+#view .container{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184339423840710747/wooden-tabletop-as-background-wood-texture-old-boards_84485-2896.png?ex=658b9d0a&is=6579280a&hm=10e6785154f5339e10d06eab798d33f4578d199d6d6012b8b19f1fc2229f5c6b&');
+}
+.servers {
+    --green-1: white;
+}
+.servers *{
+    text-shadow: black 1px 0 10px;
+}
+.servers .preview *,
+.servers .list-cont *{
+     background: transparent !important;
+}
+.servers .preview button,
+.servers .list-cont button{
+    background-image: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184339508766974104/old-gray-tin-metal-texture.png?ex=658b9d1e&is=6579281e&hm=3f7da1224867d76b79621db6d8dc9583fc77331e81d46c046cb9fe4f1bd0274d&') !important;
+    background-size: cover !important;
+    box-shadow: black 1px 0 10px;
+}
+#view .top-bar{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184338774826684496/texture-very-old-brown-wood-full-frame-backdrop-designer_116441-10086.png?ex=658b9c6f&is=6579276f&hm=da0cd84e1becd39024670d77e0c80b9a5f4c62c7f01c85af079f8f7cede00337&');
+      box-shadow: black 1px 0 10px;
+}
+.servers .chat input{
+     background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184338774826684496/texture-very-old-brown-wood-full-frame-backdrop-designer_116441-10086.png?ex=658b9c6f&is=6579276f&hm=da0cd84e1becd39024670d77e0c80b9a5f4c62c7f01c85af079f8f7cede00337&');
+       box-shadow: black 1px 0 10px;
+}
+.interface #players-lobby{
+    animation: moveAndSpin 40s linear infinite;
 }
