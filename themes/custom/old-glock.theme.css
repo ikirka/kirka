@@ -742,3 +742,14 @@ bottom: 0;
 .interface #players-lobby{
     animation: moveAndSpin 40s linear infinite;
 }
+.moderator,
+.admin,
+.ADMIN{
+    font-size: 0 !important;
+}
+.moderator:before{
+    content: "Magistrate";
+}
+.admin:before{
+    content: "Governor";
+}
