@@ -761,6 +761,6 @@ bottom: 0;
         height: 100vh;
     }
     50% {
-        height: 50vh; /* You can adjust this value based on your preference */
+        height: 50vh;
     }
 }
