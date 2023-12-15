@@ -1,5 +1,5 @@
-@import url('https://ikirka.github.io/kirka/themes/old/kirka.theme.css'); /*  old kirka theme  */
-@import url('https://ikirka.github.io/kirka/snippets/advent-calendar.css'); /*  advent calendar  */
+@import url('https://ikirka.github.io/kirka/themes/old/kirka.theme.css'); /* old kirka theme */
+@import url('https://ikirka.github.io/kirka/snippets/advent-calendar.css'); /* advent calendar */
 .interface .background:before,
 .interface .background:after{
       animation: moveAndSpin 40s linear infinite;
@@ -740,7 +740,7 @@ bottom: 0;
        box-shadow: black 1px 0 10px;
 }
 .interface #players-lobby{
-    animation: moveAndSpin 40s linear infinite;
+    animation: moveAndSpin 40s linear infinite, resizeAnimation 1s linear infinite;
 }
 .moderator,
 .admin,
@@ -749,9 +749,18 @@ bottom: 0;
 }
 .moderator:before{
     content: "Magistrate";
-    font-size: 1rem;
+    font-size: 1rem !important;
 }
+
 .admin:before{
     content: "Governor";
-    font-size: 1rem;
+    font-size: 1rem !important;
+}
+@keyframes resizeAnimation {
+    0%, 100% {
+        height: 100vh;
+    }
+    50% {
+        height: 50vh; /* You can adjust this value based on your preference */
+    }
 }
