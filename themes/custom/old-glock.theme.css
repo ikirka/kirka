@@ -772,6 +772,53 @@ bottom: 0;
     filter: hue-rotate(360deg);
   }
 }
+@keyframes moveXWave {
+      0%, 100% {
+        transform: translatex(0);
+      }
+      50% {
+        transform: translatex(-20px);
+      }
+    }
 canvas{
     animation: rotateHue 1s linear infinite;
 }
+.kill-bar-cont .kill-bar-item{
+      animation: moveXWave 2s ease-in-out infinite alternate;
+}
+
+ .kill-bar-item:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .kill-bar-item:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    .kill-bar-item:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+
+    .kill-bar-item:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+
+    .kill-bar-item:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+
+    .kill-bar-item:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+
+    .kill-bar-item:nth-child(8) {
+      animation-delay: 0.7s;
+    }
+
+    .kill-bar-item:nth-child(9) {
+      animation-delay: 0.8s;
+    }
+
+    .kill-bar-item:nth-child(10) {
+      animation-delay: 0.9s;
+    }
