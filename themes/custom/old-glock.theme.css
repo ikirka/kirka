@@ -749,7 +749,9 @@ bottom: 0;
 }
 .moderator:before{
     content: "Magistrate";
+    font-size: 1rem;
 }
 .admin:before{
     content: "Governor";
+    font-size: 1rem;
 }
