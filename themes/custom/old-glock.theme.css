@@ -740,7 +740,7 @@ bottom: 0;
        box-shadow: black 1px 0 10px;
 }
 .interface #players-lobby{
-    animation: moveAndSpin 40s linear infinite, resizeAnimation 1s linear infinite;
+    animation: moveAndSpin 40s linear infinite, resizeAnimation 1s linear infinite,  rotateHue 1s linear infinite;
 }
 .moderator,
 .admin,
@@ -763,4 +763,15 @@ bottom: 0;
     50% {
         height: 50vh;
     }
+}
+@keyframes rotateHue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+canvas{
+    animation: rotateHue 1s linear infinite;
 }
