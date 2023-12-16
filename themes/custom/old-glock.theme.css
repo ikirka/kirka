@@ -774,6 +774,7 @@ bottom: 0;
     filter: hue-rotate(360deg);
   }
 }
+
 @keyframes moveXWave {
       0%, 100% {
         transform: translatex(0);
@@ -836,4 +837,41 @@ canvas{
    }
    .money-cards img[alt="light"]{
          animation: rotateHue 1s linear infinite;
+   }
+   
+   
+@keyframes moveYWave {
+      0%, 100% {
+        transform: translateY(0) translateX(0) scale(1) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-15px) translateX(15px) scale(1.10) rotate(25deg);
+      }
+      75%{
+           transform: translateY(-20px) translateX(20px) scale(1.15) rotate(-25deg);
+      }
+    }
+   .game-interface .gun-type{
+        animation: moveYWave .5s ease-in-out infinite alternate;
+   }
+   .game-interface .gun-type:nth-child(2){
+       animation-delay: 0.1s;
+   }
+   .game-interface .gun-type:nth-child(3){
+       animation-delay: 0.2s;
+   }
+   .game-interface .gun-type:nth-child(4){
+       animation-delay: 0.3s;
+   }
+   .game-interface .gun-type:nth-child(5){
+       animation-delay: 0.4s;
+   }
+   .game-interface .gun-type:nth-child(6){
+       animation-delay: 0.6s;
+   }
+   .game-interface .gun-type:nth-child(7){
+       animation-delay: 0.7s;
+   }
+   .game-interface .gun-type:nth-child(8){
+       animation-delay: 0.8s;
    }
