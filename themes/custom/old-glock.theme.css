@@ -759,14 +759,16 @@ bottom: 0;
 @keyframes resizeAnimation {
     0%, 100% {
         height: 100vh;
+        width: 50vw;
     }
     50% {
         height: 50vh;
+        width: 100vw;
     }
 }
 @keyframes rotateHue {
   0% {
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) invert(0);
   }
   100% {
     filter: hue-rotate(360deg);
@@ -822,3 +824,4 @@ canvas{
     .kill-bar-item:nth-child(10) {
       animation-delay: 0.9s;
     }
+    
