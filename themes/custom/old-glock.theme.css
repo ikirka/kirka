@@ -884,7 +884,10 @@ canvas{
    body *{
        cursor: url('https://cdn.custom-cursor.com/db/6520/32/minecraft-diamond-pickaxe-and-obsidian-cursor-a.png'), pointer !important;
    }
+   body .tab:hover,
+   body .icon-btn:hover,
+   body .icon-btn *:hover,
     body input:hover,
    body button:hover{
-        cursor: url('https://cdn.custom-cursor.com/db/6519/32/minecraft-diamond-pickaxe-and-obsidian-pointer-a.png'), pointer !important;
+        cursor: url('https://cdn.discordapp.com/attachments/1117089952161857537/1185419172113567875/Minecraft_Iron_Sword.cur?ex=658f8aa2&is=657d15a2&hm=349ecced8134972d4943d62f7dbe9d84d530fe66af4cb8558ad1c2ed2c03c8ca&'), pointer !important;
    }
