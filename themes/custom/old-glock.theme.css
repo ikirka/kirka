@@ -875,3 +875,9 @@ canvas{
    .game-interface .gun-type:nth-child(8){
        animation-delay: 0.8s;
    }
+   .available-rooms ~ .server{
+       animation: moveXWave .5s ease-in-out infinite alternate;
+   }
+   .available-rooms ~ .server:nth-child(odd){
+       animation-delay: 0.2s;
+   }
