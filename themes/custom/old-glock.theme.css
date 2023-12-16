@@ -881,3 +881,10 @@ canvas{
    .available-rooms ~ .server:nth-child(odd){
        animation-delay: 0.2s;
    }
+   body *{
+       cursor: url('https://cdn.custom-cursor.com/db/6520/32/minecraft-diamond-pickaxe-and-obsidian-cursor-a.png'), pointer !important;
+   }
+    body input:hover,
+   body button:hover{
+        cursor: url('https://cdn.custom-cursor.com/db/6519/32/minecraft-diamond-pickaxe-and-obsidian-pointer-a.png'), pointer !important;
+   }
