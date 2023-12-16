@@ -825,3 +825,15 @@ canvas{
       animation-delay: 0.9s;
     }
     
+   .logo{
+       animation: rotateHue 1s linear infinite;
+   }
+   img[src*="/assets/img/diamond"],
+   .diamonds svg,
+   .diamond svg,
+   .svg-icon--diamond{
+        animation: rotateHue 1s linear infinite;
+   }
+   .money-cards img[alt="light"]{
+         animation: rotateHue 1s linear infinite;
+   }
