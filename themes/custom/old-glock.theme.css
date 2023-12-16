@@ -891,3 +891,6 @@ canvas{
    body button:hover{
         cursor: url('https://cdn.discordapp.com/attachments/1117089952161857537/1185419172113567875/Minecraft_Iron_Sword.cur?ex=658f8aa2&is=657d15a2&hm=349ecced8134972d4943d62f7dbe9d84d530fe66af4cb8558ad1c2ed2c03c8ca&'), pointer !important;
    }
+   img[src*="/assets/img/verified"]{
+       animation: rotateHue 1s linear infinite;
+   }
