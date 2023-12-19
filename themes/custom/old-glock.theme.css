@@ -786,6 +786,9 @@ bottom: 0;
 canvas{
     animation: rotateHue 1s linear infinite;
 }
+canvas#game{
+    animation: none !important;
+}
 .kill-bar-cont .kill-bar-item{
       animation: moveXWave 2s ease-in-out infinite alternate;
 }
