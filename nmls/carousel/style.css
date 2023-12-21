@@ -1,0 +1,114 @@
+:root {
+    --clr-primary-100: 42, 88%, 67%;
+        /* #f5c861 */
+        --clr-primary-200: 222, 88%, 67%;
+        /* #618df5 */
+        --clr-primary-300: 0, 72%, 60%;
+        /* #e25050 */
+    --clr-primary-400: 158, 88%, 41%;
+    /* #0dc683 */
+    --clr-neutral-900: 249, 11%, 12%;
+        /* #1c1b22 */
+        --clr-neutral-800: 240, 12%, 15%;
+        /* #22222b */
+        --clr-neutral-700: 240, 7%, 20%;
+        /* #2f2f37 */
+        --clr-neutral-600: 240, 7%, 25%;
+        /* #3b3b44 */
+        --clr-neutral-500: 240, 3%, 38%;
+        /* #5e5e64 */
+        --clr-neutral-100: 240, 0%, 85%;
+        /* #d9d9d9 */
+    --clr-gradient-100: linear-gradient(-45deg, hsl(0, 0%, 0%) 10%, hsl(218, 23%, 9%) 50%);
+    --img-wallpaper-filtered: url('https://assets.namelesshub.com/dist/assets/img/castle.png');
+    --branding: url('https://assets.namelesshub.com/dist/assets/img/nlc-Logo.svg');
+    --unit-025: 0.025rem;
+    --unit-10: 0.1rem;
+    --unit-15: 0.15rem;
+    --unit-25: 0.25rem;
+    --unit-30: 0.3rem;
+    --unit-40: 0.4rem;
+    --unit-50: 0.5rem;
+    --unit-80: 0.8rem;
+    --unit-87: 0.875rem;
+    --unit-100: 1rem;
+    --unit-125: 1.25rem;
+    --unit-150: 1.5rem;
+    --unit-312: 3.125rem;
+    --unit-875: 8.75rem;
+    --unit-2500: 25.00rem;
+    --unit-2687: 26.875rem
+}
+@font-face {
+    font-family: Forza;
+    font-weight: 0 1000;
+    src: url(https://rawcdn.githack.com/irrvlo/fonts/a8f0567c4db9931a7f404e909d15c111c11710b1/Forza-Medium.ttf) format('TrueType');
+    font-display: swap
+}
+.nlc-carousel{
+    width: clamp(300px, 20vw, 380px);
+}
+.nlc-carousel-wrapper{
+    background: hsl(var(--clr-neutral-900));
+    color: white;
+    border-radius: var(--unit-25);
+    padding: var(--unit-50);
+}
+.nlc-carousel-wrapper h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: var(--unit-50);
+}
+.nlc-carousel-wrapper img{
+    border-radius: var(--unit-25);
+    max-width: 100%;
+}
+.nlc-carousel-btns{
+    display: flex;
+}
+.nlc-carousel-btn{
+    width: 100%;
+    background: hsl(var(--clr-primary-200));
+    border-radius: var(--unit-25);
+    padding: var(--unit-87);
+    color: white;
+    margin-top: var(--unit-50);
+    cursor: pointer;
+    transition: all .3s ease;
+    outline: 2px solid transparent;
+    outline-offset: 3px;
+    border: 0;
+}
+.nlc-carousel-btn.nlc-watch:hover{
+    --clr-primary-200: 222, 88%, 70%;
+    outline: 2px solid hsl(var(--clr-primary-200));
+}
+.nlc-carousel-btn.nlc-live{
+    --clr-primary-200: var(--clr-primary-300);
+    width: 35%;
+    margin-left: var(--unit-50);
+    cursor: auto;
+}
+.nlc-carousel-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: var(--unit-50);
+}
+.nlc-carousel-tab{
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: var(--unit-15);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.nlc-carousel-tab + .nlc-carousel-tab{
+    margin-left: var(--unit-50);
+}
+.nlc-carousel-tab:hover,
+.nlc-carousel-tab.nlc-carousel-active{
+    width: 20px;
+}
