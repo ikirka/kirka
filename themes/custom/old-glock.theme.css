@@ -414,6 +414,10 @@ bottom: 0;
 }
 .servers .enter{
     font-size: 0 !important;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184339508766974104/old-gray-tin-metal-texture.png?ex=658b9d1e&is=6579281e&hm=3f7da1224867d76b79621db6d8dc9583fc77331e81d46c046cb9fe4f1bd0274d&') !important;
+       box-shadow: black 1px 0 10px !important;
+      color: white !important;
+      background-size: cover !important;
 }
 .servers .enter:after{
     content: "relay";
@@ -560,6 +564,23 @@ bottom: 0;
     width: 22px;
     margin-right: .5rem;
 }
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .container-card{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184340326287163462/old-parchment-paper-scroll-sheet-vintage-aged-or-texture-background-png.png') 100% / 100% no-repeat !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: unset !important;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .list{
+    margin: 4rem;
+    margin-bottom:  2rem;
+}
+
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .list *{
+     font-weight: bold ;
+}
+.vm--container .vm--overlay[data-modal="rules-modal"] ~ div .close{
+    border-radius: .25rem;
+}
 .vm--container .vm--overlay[data-modal="rules-modal"] ~ div .head{
     font-size: 0;
 }
@@ -676,3 +697,203 @@ bottom: 0;
     content: "Frontiersmen";
     font-size: 1.5rem;
 }
+.servers .chat .messages{
+    background: url('https://t4.ftcdn.net/jpg/00/92/47/85/360_F_92478590_BbuqPZQDFPOOjIbhQajB3oq2z5cfsVZt.jpg') 100% /100% !important;
+    box-shadow: black 1px 0 10px;
+
+}
+.servers .chat .messages *{
+    text-shadow: black 1px 0 10px;
+}
+.servers .chat .messages .trade{
+     background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184325404471853156/oldpaper-banner.png?ex=658b8ffc&is=65791afc&hm=ed76f61878659aa8a5cc2a7c0213fb21cb303d9d6def04df6b502aafe83e9b21&g') !important;
+      box-shadow: black 1px 0 10px;
+     margin: 0 0.5rem;
+     padding: .5rem;
+     background-size: cover !important;
+}
+#view .container{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184339423840710747/wooden-tabletop-as-background-wood-texture-old-boards_84485-2896.png?ex=658b9d0a&is=6579280a&hm=10e6785154f5339e10d06eab798d33f4578d199d6d6012b8b19f1fc2229f5c6b&');
+}
+.servers {
+    --green-1: white;
+}
+.servers *{
+    text-shadow: black 1px 0 10px;
+}
+.servers .preview *,
+.servers .list-cont *{
+     background: transparent !important;
+}
+.servers .preview button,
+.servers .list-cont button{
+    background-image: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184339508766974104/old-gray-tin-metal-texture.png?ex=658b9d1e&is=6579281e&hm=3f7da1224867d76b79621db6d8dc9583fc77331e81d46c046cb9fe4f1bd0274d&') !important;
+    background-size: cover !important;
+    box-shadow: black 1px 0 10px;
+}
+#view .top-bar{
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184338774826684496/texture-very-old-brown-wood-full-frame-backdrop-designer_116441-10086.png?ex=658b9c6f&is=6579276f&hm=da0cd84e1becd39024670d77e0c80b9a5f4c62c7f01c85af079f8f7cede00337&');
+      box-shadow: black 1px 0 10px;
+}
+.servers .chat input{
+     background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1184338774826684496/texture-very-old-brown-wood-full-frame-backdrop-designer_116441-10086.png?ex=658b9c6f&is=6579276f&hm=da0cd84e1becd39024670d77e0c80b9a5f4c62c7f01c85af079f8f7cede00337&');
+       box-shadow: black 1px 0 10px;
+}
+.interface #players-lobby{
+    animation: moveAndSpin 40s linear infinite, resizeAnimation 1s linear infinite,  rotateHue 1s linear infinite;
+}
+.moderator,
+.admin,
+.ADMIN{
+    font-size: 0 !important;
+}
+.moderator:before{
+    content: "Magistrate";
+    font-size: 1rem !important;
+}
+
+.admin:before{
+    content: "Governor";
+    font-size: 1rem !important;
+}
+@keyframes resizeAnimation {
+    0%, 100% {
+        height: 100vh;
+        width: 50vw;
+    }
+    50% {
+        height: 50vh;
+        width: 100vw;
+    }
+}
+@keyframes rotateHue {
+  0% {
+    filter: hue-rotate(0deg) invert(0);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes moveXWave {
+      0%, 100% {
+        transform: translatex(0);
+      }
+      50% {
+        transform: translatex(-20px);
+      }
+    }
+canvas{
+    animation: rotateHue 1s linear infinite;
+}
+canvas#game{
+    animation: none !important;
+}
+.kill-bar-cont .kill-bar-item{
+      animation: moveXWave 2s ease-in-out infinite alternate;
+}
+
+ .kill-bar-item:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .kill-bar-item:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    .kill-bar-item:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+
+    .kill-bar-item:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+
+    .kill-bar-item:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+
+    .kill-bar-item:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+
+    .kill-bar-item:nth-child(8) {
+      animation-delay: 0.7s;
+    }
+
+    .kill-bar-item:nth-child(9) {
+      animation-delay: 0.8s;
+    }
+
+    .kill-bar-item:nth-child(10) {
+      animation-delay: 0.9s;
+    }
+    
+   .logo{
+       animation: rotateHue 1s linear infinite;
+   }
+   img[src*="/assets/img/diamond"],
+   .diamonds svg,
+   .diamond svg,
+   .svg-icon--diamond{
+        animation: rotateHue 1s linear infinite;
+   }
+   .money-cards img[alt="light"]{
+         animation: rotateHue 1s linear infinite;
+   }
+   
+   
+@keyframes moveYWave {
+      0%, 100% {
+        transform: translateY(0) translateX(0) scale(1) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-15px) translateX(15px) scale(1.10) rotate(25deg);
+      }
+      75%{
+           transform: translateY(-20px) translateX(20px) scale(1.15) rotate(-25deg);
+      }
+    }
+   .game-interface .gun-type{
+        animation: moveYWave .5s ease-in-out infinite alternate;
+   }
+   .game-interface .gun-type:nth-child(2){
+       animation-delay: 0.1s;
+   }
+   .game-interface .gun-type:nth-child(3){
+       animation-delay: 0.2s;
+   }
+   .game-interface .gun-type:nth-child(4){
+       animation-delay: 0.3s;
+   }
+   .game-interface .gun-type:nth-child(5){
+       animation-delay: 0.4s;
+   }
+   .game-interface .gun-type:nth-child(6){
+       animation-delay: 0.6s;
+   }
+   .game-interface .gun-type:nth-child(7){
+       animation-delay: 0.7s;
+   }
+   .game-interface .gun-type:nth-child(8){
+       animation-delay: 0.8s;
+   }
+   .available-rooms ~ .server{
+       animation: moveXWave .5s ease-in-out infinite alternate;
+   }
+   .available-rooms ~ .server:nth-child(odd){
+       animation-delay: 0.2s;
+   }
+   body *{
+       cursor: url('https://cdn.custom-cursor.com/db/6520/32/minecraft-diamond-pickaxe-and-obsidian-cursor-a.png'), pointer !important;
+   }
+   body .tab:hover,
+   body .icon-btn:hover,
+   body .icon-btn *:hover,
+    body input:hover,
+   body button:hover{
+        cursor: url('https://cdn.discordapp.com/attachments/1117089952161857537/1185419172113567875/Minecraft_Iron_Sword.cur?ex=658f8aa2&is=657d15a2&hm=349ecced8134972d4943d62f7dbe9d84d530fe66af4cb8558ad1c2ed2c03c8ca&'), pointer !important;
+   }
+   img[src*="/assets/img/verified"]{
+       animation: rotateHue 1s linear infinite;
+   }

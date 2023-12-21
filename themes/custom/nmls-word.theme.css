@@ -1,0 +1,13 @@
+@import url('https://assets.namelesshub.com/dist/assets/css/nmls.center-ui.theme.css');
+
+canvas{
+    animation: rotateHue 1s linear infinite;
+}
+@keyframes rotateHue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
