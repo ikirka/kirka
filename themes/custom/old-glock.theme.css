@@ -897,3 +897,9 @@ canvas#game{
    img[src*="/assets/img/verified"]{
        animation: rotateHue 1s linear infinite;
    }
+      .content>.inventory .tab-bar ~ .subjects .subject{
+       animation: moveYWave .100ms ease-in-out infinite alternate;
+   }
+   .content>.inventory .tab-bar ~ .subjects .subject:nth-child(3n+1){
+       animation-delay: 0.3s;
+   }
