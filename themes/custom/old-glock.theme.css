@@ -903,3 +903,14 @@ canvas#game{
    .content>.inventory .tab-bar ~ .subjects .subject:nth-child(3n+1){
        animation-delay: 0.3s;
    }
+   .tab-info{
+    display: flex !important;
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+   }
+   .tab-info:not([style="display: none;"]){
+    display: block !important;
+    opacity: 1 !important;
+    transform: scale(1) rotate(360deg);
+   }
