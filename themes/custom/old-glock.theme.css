@@ -914,3 +914,27 @@ canvas#game{
     opacity: 1 !important;
     transform: scale(1) rotate(360deg);
    }
+.leaders-canvas{
+    transform: rotate(180deg);
+}
+.list-champions .top-items{
+    background: url('https://c.tenor.com/A4dcHjE2H-AAAAAC/tenor.gif') 100% / 100% !important;
+}
+.champions-header ~ .lists .list .item,
+.list-champions .bottom-items .item,
+.list-champions .top-items .item{
+    background: #3c4b685e !important;
+}
+.list-champions .bottom-items{
+    background: url('https://c.tenor.com/Lwn2wbmAXboAAAAd/tenor.gif') 100% / 100% !important;
+}
+.champions-header ~ .lists .list:nth-child(1){
+     background: url('https://c.tenor.com/FKtdcMXKBhsAAAAC/tenor.gif') 100% / 100% !important;
+     background-size: 150px !important;
+}
+.champions-header ~ .lists .list:nth-child(2){
+     background: url('https://c.tenor.com/ETzfWFJsF8cAAAAd/tenor.gif') 100% / 100% !important;
+}
+.champions-header ~ .lists .list:nth-child(3){
+     background: url('https://c.tenor.com/0bnkd64CSdcAAAAd/tenor.gif') 100% / 100% !important;
+}
