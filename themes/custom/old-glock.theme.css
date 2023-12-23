@@ -897,8 +897,8 @@ canvas#game{
    img[src*="/assets/img/verified"]{
        animation: rotateHue 1s linear infinite;
    }
-      .content>.inventory .tab-bar ~ .subjects .subject{
-       animation: moveYWave .100ms ease-in-out infinite alternate;
+   .content>.inventory .tab-bar ~ .subjects .subject{
+       animation: moveYWave 1s ease-in-out infinite alternate;
    }
    .content>.inventory .tab-bar ~ .subjects .subject:nth-child(3n+1){
        animation-delay: 0.3s;
@@ -937,4 +937,11 @@ canvas#game{
 }
 .champions-header ~ .lists .list:nth-child(3){
      background: url('https://c.tenor.com/0bnkd64CSdcAAAAd/tenor.gif') 100% / 100% !important;
+}
+.my-clan .primary{
+    font-size: 0;
+}
+.my-clan .primary:before{
+    content: "Cock";
+    font-size: 1rem;
 }
