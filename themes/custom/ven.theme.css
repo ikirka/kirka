@@ -1,0 +1,5 @@
+.tab-info .primary + .short-id,
+.card-profile .value,
+.profile .username{
+   display: none !important;
+}
