@@ -945,3 +945,11 @@ canvas#game{
     content: "Cock";
     font-size: 1rem;
 }
+.background .bg-radial:before{
+    content: "";
+    position: absolute;
+    background: url('https://cdn.discordapp.com/attachments/1117089952161857537/1191279987559510016/Original.png?ex=65a4dcf1&is=659267f1&hm=9c9f44cad0a576d8b60df23da397e93c097d0b040fbeb29a556b1353a914e51b&') 100% / 100% !important;
+    width: 200px;
+    height: 200px;
+     animation: moveAndSpin 20s linear infinite;
+}
