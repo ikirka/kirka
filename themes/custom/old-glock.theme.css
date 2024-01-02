@@ -953,3 +953,8 @@ canvas#game{
     height: 200px;
      animation: moveAndSpin 20s linear infinite;
 }
+img[src*="render.b29b682b.png"]{
+    content: url('https://cdn.discordapp.com/attachments/1117089952161857537/1191635573669101618/Grinchette.png?ex=65a6281c&is=6593b31c&hm=e29d5bce04ebf004bf49ad8c750bc833999c17b85595a08cbdfae76488b7b6e7&') !important;
+    max-width: 8rem !important;
+    max-height: 7rem !important;
+}
