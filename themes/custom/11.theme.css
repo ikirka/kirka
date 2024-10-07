@@ -1,0 +1,177 @@
+
+.menu[data-theme="11"] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --black: 0, 0, 0;
+  --dark: 32, 32, 32;
+  --light: 255, 255, 255;
+  --orange: var(--blue);
+  --green: var(--blue);
+  --blue: 76, 194, 255;
+  --red: var(--blue);
+  --hover-dark: 34, 34, 43;
+  --hover-light: 255, 255, 255, 0.05;
+  --border: 255, 255, 255, 0.15;
+  --border-active: 255, 255, 255, 0.25;
+  --shadow: 0, 0, 0, 0.5;
+  --opacity-half: 255, 255, 255, 0.5;
+  --opacity-quarter: 255, 255, 255, 0.25;
+}
+
+.menu[data-theme="11"] {
+  background: rgba(var(--dark), 0.85);
+  -webkit-backdrop-filter: saturate(3) blur(20px);
+  backdrop-filter: saturate(3) blur(20px);
+  border-radius: 0.5rem;
+}
+.menu[data-theme="11"] .content {
+  padding: 2.75rem 1.5rem 2.75rem;
+}
+.menu[data-theme="11"] .option-group {
+  background: transparent;
+  padding: 0;
+}
+.menu[data-theme="11"] .option {
+  padding: 0.438rem 2.625rem;
+  background: rgba(var(--light), 0.05);
+  border-radius: 0.25rem;
+  min-height: 4.188rem;
+}
+.menu[data-theme="11"] .option:hover {
+  background: rgba(var(--light), 0.1);
+}
+.menu[data-theme="11"] .search-input {
+  background: rgba(var(--light), 0.0333);
+  border: none;
+  padding: 0;
+  height: 2rem;
+  padding: 0 1rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  margin-bottom: 1.625rem;
+}
+
+.menu[data-theme="11"] .search-input .fas {
+  display: none;
+}
+.menu[data-theme="11"] .juice.tab {
+  height: 2.25rem;
+  padding-left: 0.438rem;
+  margin: 0.125rem 1rem 0.125rem 0;
+  border: none;
+  text-align: center;
+  line-height: 1;
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  color: rgba(var(--light));
+}
+.menu[data-theme="11"] .tab-group {
+  gap: 0;
+}
+.menu[data-theme="11"] .juice.tab:hover {
+  background: rgba(var(--light), 0.05);
+}
+.menu[data-theme="11"] .juice.tab.active {
+  position: relative;
+  border: none;
+  background: rgba(var(--light), 0.05);
+}
+.menu[data-theme="11"] .juice.tab.active:before {
+  content: "";
+  position: absolute;
+  background: rgb(var(--blue));
+  height: 40%;
+  width: 0.188rem;
+  border-radius: 0.188rem;
+  left: 0;
+}
+.menu[data-theme="11"] .juice.tab .fas {
+  margin: 0 0.656rem 0 0.438rem;
+}
+.menu[data-theme="11"] .sep {
+  display: none;
+}
+.menu[data-theme="11"] .change-keybind{
+  border: none;
+  padding: 0.438rem 2.625rem;
+  background: rgba(var(--light), 0.05);
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px rgb(var(--blue), 0);
+  border-radius: 0.25rem;
+}
+.menu[data-theme="11"] .change-keybind:hover{
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px rgb(var(--blue), 1);
+  background: rgba(var(--dark), 0.2);
+  color: rgb(var(--light))
+}
+.menu[data-theme="11"] #menu_theme{
+  border: none;
+  padding: 0.438rem 0.75rem;
+  background: rgba(var(--light), 0.05);
+  border-radius: 0.25rem;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px rgb(var(--blue), 0);
+}
+.menu[data-theme="11"] #menu_theme:hover{
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px rgb(var(--blue), 1);
+  background: rgba(var(--dark), 0.2);
+  border-radius: 0.25rem;
+
+}
+.menu[data-theme="11"] .juice-button{
+  font-size: 14px;
+}
+.menu[data-theme="11"] .option #opener,
+.menu[data-theme="11"] .option input[type="text"],
+.menu[data-theme="11"] .juice-button{
+  border: none;
+  padding: 0.438rem 2.625rem;
+  background: rgba(var(--light), 0.05);
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px rgb(var(--blue), 0);
+  border-radius: 0.25rem;
+}
+.menu[data-theme="11"] .option #opener:hover,
+.menu[data-theme="11"] .option input[type="text"]:hover,
+.menu[data-theme="11"] .juice-button:hover{
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px rgb(var(--blue), 1);
+  background: rgba(var(--dark), 0.2);
+  color: rgb(var(--light))
+}
+.menu[data-theme="11"] .option #opener{
+  cursor: pointer;
+}
+.menu[data-theme="11"] .sidebar{
+  position: relative;
+  border: none;
+}
+.menu[data-theme="11"] .footer{
+  position: absolute;
+  text-align: center;
+  margin: 0.5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgb(var(--black), 0.15);
+  border-radius: 0.5rem;
+}
+.menu[data-theme="11"] .footer .bottom{
+  margin-top: 1rem;
+  background: rgba(var(--light), 0.05);
+  padding: 0.438rem;
+  border-radius: 0.25rem;
+}
+.menu[data-theme="11"] .option-group:last-child{
+  padding-bottom: 2.75rem;
+}
+.menu[data-theme="11"] .option.dropdown .content{
+  padding: 0;
+  opacity: 0;
+  margin: 0;
+}
+.menu[data-theme="11"] .option.dropdown.active .content{
+  opacity: 1;
+}
+.menu[data-theme="11"] .option.dropdown.active .content textarea{
+  min-height: 6rem;
+  padding: 0.5rem;
+}
